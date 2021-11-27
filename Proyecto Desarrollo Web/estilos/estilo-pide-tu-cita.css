@@ -1,0 +1,67 @@
+form {
+    display: block;
+    margin-top: 40px;
+}
+
+fieldset {
+    padding: 30px 30px 30px;
+}
+
+dialog {
+    position: fixed;
+    margin: auto;
+    display: flex;
+}
+
+#modal-view {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+}
+
+dialog::backdrop {
+    background: repeating-linear-gradient( 45deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, rgba(0, 0, 0, 0.3) 1px, rgba(0, 0, 0, 0.3) 20px);
+    backdrop-filter: blur(3px);
+}
+
+.modal-container {
+    position: fixed;
+    background-color: #FEF1E6;
+    width: 700px;
+    height: 400px;
+    left: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-transform: translate(-50%, -200%);
+    -ms-transform: translate(-50%, -200%);
+    transform: translate(-50%, -200%);
+    -webkit-transition: -webkit-transform 200ms ease-out;
+    transition: transform 200ms ease-out;
+    text-align: center;
+    padding: 4% 6% 6% 6%;
+}
+
+.modal:before {
+    content: "";
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.modal:target:before {
+    display: block;
+}
+
+.modal:target .modal-container {
+    top: 10%;
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+}
+
+#modal-close {}
