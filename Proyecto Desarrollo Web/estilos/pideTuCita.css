@@ -1,0 +1,57 @@
+
+.content-form{
+    padding: 1.75rem 1rem;
+    border: 1px solid #000000;
+    border-top: none;
+}
+
+legend{
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    font-family: fantasy;
+}
+
+label{
+    display: inline-block;
+    font-size: 1rem;
+    color: #4b4a4a;
+    margin-bottom: 0.5rem;
+}
+
+input{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.3754rem 0.75rem;
+    color: #4b4a4a;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    margin-bottom: 1rem;
+    margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
