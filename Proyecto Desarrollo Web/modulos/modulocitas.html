@@ -57,22 +57,128 @@
             </div>
         </header>
         </nav>
-        
         <div class="navpaginaactual">
             <pre>
-             <strong>Actualmente se encuentra en: </strong> <em>Modulo de Citas</em>
+             <strong>Actualmente se encuentra en: </strong> <em>Modulo de citas</em>
             </pre>
         </div>
-        <div class="regresar">
+        <div class="regresar" style="align-content: center">
             <strong>
                 <a href="../paginas/modulos.html"> << Regresar al menu de modulos</a>
             </strong>
         </div>
         <div class="container p-2">
-           
+         
+            <form>
+                <fieldset disabled>
+                  <legend>Ingreso de datos de las citas</legend>
+                  <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label">Codigo de cita: </label>
+                    <input type="number" placeholder="codigo" value="3">
 
-       
+                    
+                </fieldset>
+                <label for="exampleFormControlInput1" class="form-label">Fecha cita: </label>
+                <input type="datetime-local" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo">
+                <br>
+                <label for="tel" class="form-label">Hora de inicio de cita: </label>
+                 <input type="tel" name="telf"  class="form-control" id="exampleFormControlInput1"  pattern="([0-9])" placeholder="Ingrese hora de inicio de la cita"> 
+                 <br>
+                 <label for="tel" class="form-label">Hora que termino la cita: </label>
+                 <input type="tel" name="telf"  class="form-control" id="exampleFormControlInput1"  pattern="([0-9])" placeholder="Ingrese hora de inicio de finalizacion de la cita"> 
+                 <br>
+                  
+                 <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Paciente: </label>
+                 <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Seleccione</option>
+                    <option value="1">Lorena Zamorano</option>
+                    <option value="2">Arnaldo Padilla</option>
+                   
+                  </select>
+                <br>
+                <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Medico: </label>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Seleccione</option>
+                    <option value="1">Bryan Hernandez</option>
+                    <option value="2">Alex Espino</option>
+                   
+                  </select>
+                
+                <br>
+                <p>Estado de la cita:</p>
+                <div>
+                  <input type="radio" id="contactChoice1"
+                   name="contact" value="email" checked>
+                  <label for="contactChoice1">Pospuesta</label>
+              
+                  <input type="radio" id="contactChoice2"
+                   name="contact" value="phone">
+                  <label for="contactChoice2">Finalizada</label>
+              
+                  <input type="radio" id="contactChoice3"
+                   name="contact" value="mail">
+                  <label for="contactChoice3">Pendiente</label>
 
+                  <input type="radio" id="contactChoice3"
+                   name="contact" value="mail">
+                  <label for="contactChoice3">Cancelada</label>
+                </div>
+              
+                 <div style="text-align: center;">
+                    <button type="button" class="btn btn-success">Insertar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                    <button type="button" class="btn btn-warning">Actualizar</button></div>
+                
+                  
+              </form>
+        </div>
+
+        </div>
+        <br>
+        <div class="container p-3 my-3">
+        <!--Tabla de datos de pacientes-->
+        <table class="table-dark table-hover" style="text-align: center;">
+            <h3 style="text-align: center;">Listado de Pacientes</h3>
+            <thead>
+                
+                <tr>
+                    <th>COD</th>
+                    <th colspan="2">  Nombre</th>
+                    <th colspan="2">  Apellido</th>
+                    <th colspan="2">  Tel. Particular</th>
+                    <th colspan="2">  Tel. fijo</th>
+                    <th colspan="2">  Identidad</th>
+                    <th colspan="2">  Ocupacion</th>
+                    <th colspan="2">  Correo</th>
+                    <th colspan="2">  Genero</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">1</td>
+                    <td colspan="2">Lorena</td>
+                    <td colspan="2">Zamorano</td>
+                    <td colspan="2">99-99-99-99</td>
+                    <td colspan="2">12-34-56-78</td>
+                    <td colspan="2">080120011111</td>
+                    <td colspan="2">Estudiante</td>
+                    <td colspan="2">isiszapata@gmail.com</td>
+                    <td colspan="2">Femenino</td>
+                </tr>
+                <tr>
+                    <td scope="row">2</td>
+                    <td colspan="2">Arnaldo</td>
+                    <td colspan="2">Padilla</td>
+                    <td colspan="2">99-99-99-99</td>
+                    <td colspan="2">12-34-56-78</td>
+                    <td colspan="2">080119851111</td>
+                    <td colspan="2">Ing. en ciencias de la computacion</td>
+                    <td colspan="2">carlosflores@gmail.com</td>
+                    <td colspan="2">Masculino</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
         <footer>
             <div class="main-content">
