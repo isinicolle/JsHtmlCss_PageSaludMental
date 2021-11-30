@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
     <link rel="icon" type="imagenes/x-icon" href="../imagenes/icono.png">
     <link rel="stylesheet" href="../estilos/estiloTratamientos.css">
     <link rel="stylesheet" href="../estilos/estiloBlog.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>Modulo de tratamientos</title>
+    
+    <title>Modulo de Tratamientos</title>
 </head>
 
 <body>
@@ -27,25 +30,25 @@
                         <a href="../index.html">Pagina de Inicio</a>
                     </li>
                     <li style="display: inline;">
-                        <a href="./quienessomos.html">Quienes somos</a>
+                        <a href="../paginas/quienessomos.html">Quienes somos</a>
                     </li>
                     <li style="display: inline;">
-                        <a href="./blog.html">Blog</a>
+                        <a href="../paginas/blogdeinicio.html">Blog</a>
                     </li>
                     <li style="display: inline;">
-                        <a href="./tratamientos.html">Tratamientos</a>
+                        <a href="../paginas/tratamientos.html">Tratamientos</a>
                     </li>
                     <li style="display: inline;">
-                        <a href="./testimonios.html">Testimonios</a>
+                        <a href="../paginas/testimonios.html">Testimonios</a>
                     </li>
                     <li style="display: inline;">
-                        <a href="./ubicacion.html">Ubicación</a>
+                        <a href="../paginas/ubicacion.html">Ubicación</a>
                     </li>
                     <li style="display: inline;">
-                        <a href="./pidetucita.html">Pide tu Cita</a>
+                        <a href="../paginas/pidetucita.html">Pide tu Cita</a>
                     </li>
                     <li>
-                        <a href="./iniciarsesion.html">Iniciar Sesion</a>
+                        <a href="../paginas/iniciarsesion.html">Iniciar Sesion</a>
                     </li>
                 </ul>
 
@@ -56,13 +59,139 @@
         </nav>
         <div class="navpaginaactual">
             <pre>
-             <strong>Actualmente se encuentra en: </strong> <em>Modulo de tratamientos</em>
+             <strong>Actualmente se encuentra en: </strong> <em>Modulo de Tratamientos</em>
             </pre>
         </div>
+        <div class="regresar" style="align-content: center">
+            <strong>
+                <a href="../paginas/modulos.html"> << Regresar al menu de modulos</a>
+            </strong>
+        </div>
+        <div class="container p-2">
+         <!------------------------------------------------------------------------------------------->
+            <form style="border: 300px;">
+                <fieldset disabled>
+                  <legend>Ingreso de datos del Tratamiento</legend>
+                  <br>
+                  <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label">Codigo de Tratamiento: </label>
+                    <input type="number" placeholder="codigo" value="3">
+                </fieldset>
+               <br>
+                <div class="row">
+                    <div class="col">
+                
+                 <select class="form-control" id="exampleFormControlSelect1">
+                   <option selected>Seleccione con quien es la Cita</option>
+                   <option value="1">Bryan Hernandez</option>
+                   <option value="2">Alex Espino</option>
+                 </select>
 
-       
+                </div>
+                <div class="col">
+                 <select class="form-control" id="exampleFormControlSelect1">
+                   <option selected>Seleccione el Paciente</option>
+                   <option value="1">Lorena	Zamorano</option>
+                   <option value="2">Arnaldo Padilla</option>
+                 </select>
+
+                </div>
+                <div class="col">
+                 <select class="form-control" id="exampleFormControlSelect1">
+                    <option selected>Seleccione la Condición</option>
+                    <option value="1">Demensia</option>
+                    <option value="2">Traumatismo</option>
+                  </select>
+                </div>
+            </div>
+
+                 <br>
+                 <label for="validationCustom03" class="form-label">Descripción de la Condición: </label>
+                 <input type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese la descripción de la Condición">
+                 <div class="invalid-feedback">
+                       Condición.
+                 </div>
+                 <br>
+                 <label for="validationCustom03" class="form-label">Nombre del Tratamiento: </label>
+                 <input type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese el nombre del tratamiento">
+                 <div class="invalid-feedback">
+                       Nombre.
+                 </div>
+                 <br>
+                 <label for="validationCustom03" class="form-label">Descripción del Tratamiento: </label>
+                 <input type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese la descripción del tratamiento">
+                 <div class="invalid-feedback">
+                       Tratamiento.
+                 </div>
+                 <br>
+                
+
+                 <div class="form-row">
+                <div class="col">
+                 <label for="validationDefault03" class="form-label">Precio: </label>
+                 <input type="text" class="form-control" id="validationCustom01" required placeholder="0" style="width: 200px;">
+                </div>
+            </div>
+                 <br>
 
 
+                 
+                      
+
+                 <div style="text-align: center;">
+                    <button type="button" class="btn btn-success">Insertar</button>
+                    <button type="button" class="btn btn-primary">Actualizar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button></div>
+
+                   
+              </form>
+        
+              
+               
+             
+            </div>
+
+        </div>
+        <br>
+        <div class="container p-3 my-3">
+        <!--Tabla de datos de pacientes-->
+        <table class="table-dark table-bordered" style="margin: 0 auto; text-align: center">
+            <h3 style="text-align: center;">Tratamientos</h3>
+           
+            <thead>  
+                <tr>
+                    <th>COD</th>
+                    <th colspan="1">  Cita</th>
+                    <th colspan="1">  Paciente</th>
+                    <th colspan="1">  Condición</th>
+                    <th colspan="1">  Nombre Tratamiento</th>
+                    <th colspan="1">  Descripcion Tratamiento</th>
+                    <th colspan="1">  Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">1</td>
+                    <td colspan="1">Bryan Hernandez</td>
+                    <td colspan="1">Arnaldo Padilla</td>
+                    <td colspan="1">Traumatismo</td>
+                    <td colspan="1">Medicación</td>
+                    <td colspan="1">Reposo y medicación</td>
+                    <td colspan="1">L.1900.00</td>
+                </tr>
+                <tr>
+                    <td scope="row">2</td>
+                    <td colspan="1">Alex Espino</td>
+                    <td colspan="1">Lorena	Zamorano</td>
+                    <td colspan="1">Demensia</td>
+                    <td colspan="1">Psicoterapia</td>
+                    <td colspan="1">Terapia Pscologica</td>
+                    <td colspan="1">L.2450.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<!------------------------------------------------------------------------------------------->
         <footer>
             <div class="main-content">
                 <div class="left box">
@@ -102,8 +231,9 @@
                 </div>
             </div>
             <div class="bottom">
+
                 <center>
-                    <span class="credit">Desarrollado por Isis Zapata - Hacknel - Jose Figueroa - Olman Garcia |
+                    <span class="credit">Desarrollado por Isis Zapata - Jessy Díaz - Hacknel - Jose Figueroa - Olman Garcia |
                     </span>
                     <span class="far fa-copyright"></span><span> 2021.</span>
                 </center>
