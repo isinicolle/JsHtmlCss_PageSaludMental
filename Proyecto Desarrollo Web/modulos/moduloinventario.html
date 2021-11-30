@@ -8,6 +8,7 @@
     <link rel="icon" type="imagenes/x-icon" href="../imagenes/icono.png">
     <link rel="stylesheet" href="../estilos/estiloTratamientos.css">
     <link rel="stylesheet" href="../estilos/estiloBlog.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Modulo de Inventario</title>
 </head>
@@ -59,10 +60,121 @@
              <strong>Actualmente se encuentra en: </strong> <em>Modulo de inventario</em>
             </pre>
         </div>
-
-       
-
-
+        <div class="regresar" style="align-content: center">
+            <strong>
+                <a href="../paginas/modulos.html"> << Regresar al menu de modulos</a>
+            </strong>
+        </div>
+     
+        <div class="container p-2 border" style="background-color: blanchedalmond;">
+                 <form>
+                <fieldset available class="border">
+                  <legend>Ingreso De Datos de Inventario</legend>
+                  <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label">Codigo de Producto: </label>
+                    <input type="number" placeholder="codigo Producto" value="1">
+                </fieldset>
+                <br>
+                <fieldset available class="border">
+                    <div class="mb-3">
+                      <label for="disabledTextInput" class="form-label">Codigo de Compras: </label>
+                      <input type="number" placeholder="codigo compras" value="1">
+                  </fieldset>
+                  <br>
+                  <fieldset available class="border">
+                      <div class="mb-3">
+                        <label for="disabledTextInput" class="form-label">Codigo de Empleado: </label>
+                        <input type="number" placeholder="codigo Empleado" value="1">
+                    </fieldset>
+                
+                <br>
+                    <div class="border">
+                    <label for="disabledTextInput form-group form-select" class="form-label">Descripcion: </label>
+                    <input class="form-control form-control-lg" type="Descripcion" placeholder="Descripcion de Producto">
+                 </div>
+                <br>
+                <label for="exampleFormControlSelect2 form-group form-select form-select-lg mb-5">Cantidad Disponibles</label>
+                <select class="form-control border">
+                    <option></option>
+                    <option>5</option>
+                    <option>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                    <option>25</option>
+                  </select>
+                    <br>
+                    <label for="exampleFormControlSelect2 form-group form-select form-select-lg mb-5">Cantidad Vencidas</label>
+                    <select class="form-control border">
+                        <option></option>
+                        <option>5</option>
+                        <option>10</option>
+                        <option>15</option>
+                        <option>20</option>
+                        <option>25</option>
+                      </select>
+                      <br>
+                     <label for="exampleFormControlInput1" class="form-label">Fecha de Compra: </label>
+                     <input type="datetime-local" class="form-control" id="exampleFormControlInput1" placeholder="Fecha de Compra">
+                     <br>
+                     <label for="exampleFormControlInput1" class="form-label">Fecha de Vencimiento: </label>
+                     <input type="datetime-local" class="form-control" id="exampleFormControlInput1" placeholder="Fecha de Vencimiento">
+                      <br>
+                      <label for="exampleFormControlSelect2 form-group form-select form-select-lg mb-5">Imagen de Producto</label>
+                      <div class="row" >
+                        <div class="col">
+                            <img src="../imagenes/lorazepam.jpg" alt="lorazepam" width="500px" height="300px" >
+                        </div>
+                        <div class="col">
+                            <img src="../imagenes/prozac.jpg" alt="prozac" width="500px" height="300px" >
+                        </div>
+                      </div> 
+                      <br>
+                      <div style="text-align: center;">
+                        <button type="button" class="btn btn-success">Insertar</button>
+                        <button type="button" class="btn btn-danger">Eliminar</button>
+                        <button type="button" class="btn btn-primary">Actualizar</button></div>
+                </form>
+                </div>
+                <br>
+                <div class="container p-3 my-3 border" style="background-color: blanchedalmond;">
+                    <table class="table-hover" style="text-align: center; background-color: blanchedalmond;">
+                        <h3 style="text-align: center;">Tabla de Inventario</h3>
+                        <thead>
+                            
+                            <tr>
+                                <th>Cod. de Producto</th>
+                                <th colspan="2">  Nombre De producto</th>
+                                <th colspan="2">  Descripcion</th>
+                                <th colspan="2">  Cantidad Disponibles</th>
+                                <th colspan="2">  Fecha de Compra </th>
+                                <th colspan="2">  Fecha de Vencimiento</th>
+                                <th colspan="2">  Empleado Encargado</th>
+                              
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">1</td>
+                                <td colspan="2">Lorazepam</td>
+                                <td colspan="2">2mg</td>
+                                <td colspan="2">25</td>
+                                <td colspan="2">10/11/2021</td>
+                                <td colspan="2">31/12/2021</td>
+                                <td colspan="2">Cristopher Lozano</td>
+                               
+                            </tr>
+                            <tr>
+                                <td scope="row">2</td>
+                                <td colspan="2">Prozac</td>
+                                <td colspan="2">10mg</td>
+                                <td colspan="2">10</td>
+                                <td colspan="2">10/11/2021</td>
+                                <td colspan="2">31/12/2021</td>
+                                <td colspan="2">Jessy Diaz</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
         <footer>
             <div class="main-content">
                 <div class="left box">
@@ -103,7 +215,7 @@
             </div>
             <div class="bottom">
                 <center>
-                    <span class="credit">Desarrollado por Isis Zapata - Hacknel - Jose Figueroa - Olman Garcia |
+                    <span class="credit">Desarrollado por Isis Zapata - Jessy Diaz - Cristopher - Jose Figueroa - Olman Garcia |
                     </span>
                     <span class="far fa-copyright"></span><span> 2021.</span>
                 </center>
