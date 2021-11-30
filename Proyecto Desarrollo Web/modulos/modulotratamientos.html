@@ -68,33 +68,43 @@
             </strong>
         </div>
         <div class="container p-2">
-         
-            <form>
+         <!------------------------------------------------------------------------------------------->
+            <form style="border: 300px;">
                 <fieldset disabled>
                   <legend>Ingreso de datos del Tratamiento</legend>
+                  <br>
                   <div class="mb-3">
                     <label for="disabledTextInput" class="form-label">Codigo de Tratamiento: </label>
                     <input type="number" placeholder="codigo" value="3">
                 </fieldset>
-               
-                <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Cita con: </label>
-                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                   <option selected>Seleccione</option>
+               <br>
+                <div class="row">
+                    <div class="col">
+                
+                 <select class="form-control" id="exampleFormControlSelect1">
+                   <option selected>Seleccione con quien es la Cita</option>
                    <option value="1">Bryan Hernandez</option>
                    <option value="2">Alex Espino</option>
                  </select>
-                 <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Paciente: </label>
-                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                   <option selected>Seleccione</option>
+
+                </div>
+                <div class="col">
+                 <select class="form-control" id="exampleFormControlSelect1">
+                   <option selected>Seleccione el Paciente</option>
                    <option value="1">Lorena	Zamorano</option>
                    <option value="2">Arnaldo Padilla</option>
                  </select>
-                 <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Condición: </label>
-                 <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                    <option selected>Seleccione</option>
+
+                </div>
+                <div class="col">
+                 <select class="form-control" id="exampleFormControlSelect1">
+                    <option selected>Seleccione la Condición</option>
                     <option value="1">Demensia</option>
                     <option value="2">Traumatismo</option>
                   </select>
+                </div>
+            </div>
+
                  <br>
                  <label for="validationCustom03" class="form-label">Descripción de la Condición: </label>
                  <input type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese la descripción de la Condición">
@@ -114,22 +124,39 @@
                        Tratamiento.
                  </div>
                  <br>
-                <label for="validationDefault03" class="form-label">Precio: </label>
-                <input type="text" class="form-control" id="validationDefault03" required placeholder="Ingrese el Precio del tratamiento" style="width:300px">
-                <br>
+                
+
+                 <div class="form-row">
+                <div class="col">
+                 <label for="validationDefault03" class="form-label">Precio: </label>
+                 <input type="text" class="form-control" id="validationCustom01" required placeholder="0" style="width: 200px;">
+                </div>
+            </div>
+                 <br>
+
+
+                 
+                      
+
                  <div style="text-align: center;">
                     <button type="button" class="btn btn-success">Insertar</button>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
-                    <button type="button" class="btn btn-warning">Actualizar</button></div>
+                    <button type="button" class="btn btn-primary">Actualizar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button></div>
+
+                   
               </form>
-        </div>
+        
+              
+               
+             
+            </div>
 
         </div>
         <br>
         <div class="container p-3 my-3">
         <!--Tabla de datos de pacientes-->
         <table class="table-dark table-bordered" style="margin: 0 auto; text-align: center">
-            <h3 style="text-align: center;">Listado de Tratamientos</h3>
+            <h3 style="text-align: center;">Tratamientos</h3>
            
             <thead>  
                 <tr>
@@ -164,7 +191,7 @@
             </tbody>
         </table>
     </div>
-
+<!------------------------------------------------------------------------------------------->
         <footer>
             <div class="main-content">
                 <div class="left box">
@@ -204,6 +231,7 @@
                 </div>
             </div>
             <div class="bottom">
+
                 <center>
                     <span class="credit">Desarrollado por Isis Zapata - Jessy Díaz - Hacknel - Jose Figueroa - Olman Garcia |
                     </span>
