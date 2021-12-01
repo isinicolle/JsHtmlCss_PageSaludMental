@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
     <link rel="icon" type="imagenes/x-icon" href="../imagenes/icono.png">
     <link rel="stylesheet" href="../estilos/estiloTratamientos.css">
     <link rel="stylesheet" href="../estilos/estiloBlog.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
     <title>Modulo de Empleados</title>
 </head>
 
@@ -60,7 +63,73 @@
             </pre>
         </div>
 
-       
+        <div class="regresar" style="align-content: center">
+            <strong>
+                <a href="../paginas/modulos.html"> << Regresar al menu de modulos >></a>
+            </strong>
+        </div>
+
+        <div class="container empleados">
+         
+            <form>
+                <fieldset disabled>
+                  <legend>Ingrese Datos del Empleado:</legend>
+                  <div class="emp-3">
+                    <label for="name" class="form-label">Datos Personales </label><br>
+                    <label for="disabledTextInput" class="form-label">Codigo de Empleado: </label>
+                    <input type="number" placeholder="codigo" value="5">
+                    
+                </fieldset>
+                <label for="name" class="form-label">Nombre Empleado: </label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su Nombre">
+                <br>
+                <label for="name" class="form-label">Apellido Empleado: </label>
+                 <input type="text" name="name"  class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su Apellido"> 
+                 <br>
+                 <label for="tel" class="form-label">Telefono: </label>
+                 <input type="tel" name="telf"  class="form-control" id="exampleFormControlInput1"  placeholder="Ingrese su Telefono"> 
+                 <br>
+                 <label for="validationDefault03" class="form-label">Identidad: </label>
+                <input type="text" class="form-control" id="validationDefault03" required placeholder="Ingrese su Identidad">
+                <br>
+                 <label for="exampleFormControlInput1" class="form-label">Fecha de nacimiento: </label>
+                 <input type="datetime-local" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo">
+                 <br>
+                
+                <label for="name" class="form-label">Datos Empresariales </label><br>
+                <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Puesto: </label>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                   <option selected> Seleccione un Puesto: </option>
+                   <option value="1">Psicologo</option>
+                   <option value="2">Terapeuta</option>
+                   <option value="3">Secretario</option>
+                 </select>
+                <br>
+                <label for="exampleFormControlInput1" class="form-label">Correo Electronico: </label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo">
+                <br>
+                <label for="exampleFormControlInput1" class="form-label">Usuario: </label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su Usuario">
+                <br>
+                <label for="exampleFormControlInput1" class="form-label">Contraseña: </label>
+                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su Contraseña">
+                <br>
+                <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Estado del Empleado: </label>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                   <option selected> Seleccione un Puesto: </option>
+                   <option value="1">Activo</option>
+                   <option value="2">Inactivo</option>
+                 </select>
+
+                
+                 <div style="text-align: center;">
+                    <button type="button" class="btn btn-success">Insertar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                    <button type="button" class="btn btn-warning">Actualizar</button>
+                </div>
+                <br>
+              </form>
+        </div>
 
 
         <footer>
