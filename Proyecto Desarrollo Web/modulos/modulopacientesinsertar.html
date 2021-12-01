@@ -114,7 +114,7 @@
                  <a href="#post-view">
                  <br>
                  <div style="text-align: center;">
-                    <button type="button" class="btn btn-success">Insertar</button>
+                    <button type="button" class="btn btn-success" onclick="msj2()">Insertar</button>
                     
                     <a href="./modulopacientes.html">     <button type="button" class="btn btn-danger" onclick="msj()">Cancelar</button></a>
                     <script  type="text/javascript">
@@ -122,6 +122,11 @@
                         function msj(){
 
                             alert("la informacion que no se a insertado se perdera")
+                            return
+                        }
+                         function msj2(){
+
+                            alert("Paciente nuevo agregado!")
                             return
                         }
                 

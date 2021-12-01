@@ -67,7 +67,7 @@
                 <a href="../modulos/modulopacientes.html" style="color: darkslateblue;"> << Regresar al listado de pacientes</a>
             </strong>
         </div>
-        <div class="container p-2" style="background-color:darksalmon">
+        <div class="container p-2" style="background-color:lightblue">
          
             <form>
                 <fieldset disabled>
@@ -113,7 +113,7 @@
                 </fieldset>
                  <br>
                  <div style="text-align: center;">
-                    <button type="button" class="btn btn-success">Eliminar Paciente</button>
+                    <button type="button" class="btn btn-success" onclick="msj2()">Eliminar Paciente</button>
                     
                     <a href="./modulopacientes.html">     <button type="button" class="btn btn-danger" onclick="msj()">Cancelar</button></a>
                     <script  type="text/javascript">
@@ -124,7 +124,11 @@
                             return
                         }
                 
-                
+                         function msj2(){
+
+                            alert("Paciente eliminado con exito (en realidad se cambio su estado a inactivo)")
+                            return
+                        }
                     </script>
          
                   
