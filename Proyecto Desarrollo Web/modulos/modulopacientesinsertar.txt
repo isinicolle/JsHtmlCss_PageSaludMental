@@ -67,106 +67,59 @@
                 <a href="../paginas/modulos.html" style="color: darkslateblue;"> << Regresar al menu de modulos</a>
             </strong>
         </div>
-        <div class="container p-2" style="background-color:gainsboro">
+        <div class="container p-2" style="background-color:darksalmon">
          
-            <div class="container p-3 my-3">
-                <!--Tabla de datos de pacientes-->
-                <table class="table-bordered  table-hover" style="text-align: center;">
-                    <h3 style="text-align: center;">Listado de Pacientes</h3>
-                    <thead>
-                        
-                        <tr>
-                            <th>COD</th>
-                            <th colspan="2">  Nombre</th>
-                            <th colspan="2">  Apellido</th>
-                            <th colspan="2">  Tel. Particular</th>
-                            <th colspan="2">  Tel. fijo</th>
-                            <th colspan="2">  Identidad</th>
-                            <th colspan="2">  Ocupacion</th>
-                            <th colspan="2">  Correo</th>
-                            <th colspan="2">  Genero</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td scope="row">1</td>
-                            <td colspan="2">Lorena</td>
-                            <td colspan="2">Zamorano</td>
-                            <td colspan="2">99-99-99-99</td>
-                            <td colspan="2">12-34-56-78</td>
-                            <td colspan="2">080120011111</td>
-                            <td colspan="2">Estudiante</td>
-                            <td colspan="2">isiszapata@gmail.com</td>
-                            <td colspan="2">Femenino</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">2</td>
-                            <td colspan="2">Arnaldo</td>
-                            <td colspan="2">Padilla</td>
-                            <td colspan="2">99-99-99-99</td>
-                            <td colspan="2">12-34-56-78</td>
-                            <td colspan="2">080119851111</td>
-                            <td colspan="2">Ing. en ciencias de la computacion</td>
-                            <td colspan="2">carlosflores@gmail.com</td>
-                            <td colspan="2">Masculino</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">3</td>
-                            <td colspan="2">Arnaldo</td>
-                            <td colspan="2">Padilla</td>
-                            <td colspan="2">99-99-99-99</td>
-                            <td colspan="2">12-34-56-78</td>
-                            <td colspan="2">080119851111</td>
-                            <td colspan="2">Estudiante</td>
-                            <td colspan="2">carlosflores@gmail.com</td>
-                            <td colspan="2">Masculino</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">4</td>
-                            <td colspan="2">Arnaldo</td>
-                            <td colspan="2">Padilla</td>
-                            <td colspan="2">99-99-99-99</td>
-                            <td colspan="2">12-34-56-78</td>
-                            <td colspan="2">080119851111</td>
-                            <td colspan="2">Estudiante</td>
-                            <td colspan="2">carlosflores@gmail.com</td>
-                            <td colspan="2">Masculino</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">5</td>
-                            <td colspan="2">Arnaldo</td>
-                            <td colspan="2">Padilla</td>
-                            <td colspan="2">99-99-99-99</td>
-                            <td colspan="2">12-34-56-78</td>
-                            <td colspan="2">080119851111</td>
-                            <td colspan="2">Estudiante</td>
-                            <td colspan="2">carlosflores@gmail.com</td>
-                            <td colspan="2">Masculino</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">6</td>
-                            <td colspan="2">Arnaldo</td>
-                            <td colspan="2">Padilla</td>
-                            <td colspan="2">99-99-99-99</td>
-                            <td colspan="2">12-34-56-78</td>
-                            <td colspan="2">080119851111</td>
-                            <td colspan="2">Ing. en ciencias de la computacion</td>
-                            <td colspan="2">carlosflores@gmail.com</td>
-                            <td colspan="2">Masculino</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <form>
+                <fieldset disabled>
+                  <legend>Ingreso de datos del Paciente</legend>
+                  <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label">Codigo de Paciente: </label>
+                    <input type="number" placeholder="codigo" value="3">
+
+                    
+                </fieldset>
+                <label for="exampleFormControlInput1" class="form-label">Correo Electronico: </label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo">
                 <br>
-                <div style="text-align: center;">
-                    <a href="./modulopacientesinsertar.html">     <button type="button" class="btn btn-success">Agregar Paciente</button></a>
-               
-                    <button type="button" class="btn btn-danger">Editar Informacion</button>
+                <label for="tel" class="form-label">Telefono Fijo: </label>
+                 <input type="tel" name="telf"  class="form-control" id="exampleFormControlInput1"  pattern="(+[0-9]{3}) [0-9]{9}" placeholder="Ingrese el telefono fijo"> 
+                 <br>
+                 <label for="tel" class="form-label">Telefono Particular: </label>
+                 <input type="tel" name="telf"  class="form-control" id="exampleFormControlInput1"  pattern="(+[0-9]{3}) [0-9]{9}" placeholder="Ingrese el telefono particular"> 
+                 <br>
+                 <label for="exampleFormControlInput1" class="form-label">Fecha de nacimiento: </label>
+                 <input type="datetime-local" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo">
+                 <br>
+                <label for="validationDefault03" class="form-label">Identidad: </label>
+                <input type="text" class="form-control" id="validationDefault03" required placeholder="Ingrese el RTN">
+                 
+                <br>
+                <label for="validationCustom03" class="form-label">Ocupacion: </label>
+                <input type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese la ocupacion">
+                <div class="invalid-feedback">
+                      Porfavor ingrese la ocupacion del paciente.
                 </div>
-            </div>
+                <br>
+                <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Genero: </label>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                   <option selected>Seleccione</option>
+                   <option value="1">Masculino</option>
+                   <option value="2">Femenino</option>
+                   <option value="3">No binario</option>
+                 </select>
+                 <br>
+                 <div style="text-align: center;">
+                    <button type="button" class="btn btn-success">Insertar</button>
+                    <button type="button" class="btn btn-danger">Cancelar</button>
+                 
+                
+                  
+              </form>
+        </div>
 
         </div>
         <br>
-
+        
 
         <footer>
             <div class="main-content">
