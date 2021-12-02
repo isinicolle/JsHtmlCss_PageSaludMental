@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="icon" type="imagenes/x-icon" href="../imagenes/icono.png">
+    <link rel="stylesheet" href="../estilos/estiloTratamientos.css">
+    <link rel="stylesheet" href="../estilos/estiloBlog.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <title>Modulo de Empleados</title>
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="logo-header">
+                <div>
+                    <img src="../imagenes/logo pagina proyecto_preview_rev_1.png" alt="">
+                </div>
+            </div>
+            <nav class="nav-menu">
+
+                <ul>
+                    <li style="display: inline;">
+                        <a href="../index.html">Pagina de Inicio</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="./quienessomos.html">Quienes somos</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="./blog.html">Blog</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="./tratamientos.html">Tratamientos</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="./testimonios.html">Testimonios</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="./ubicacion.html">Ubicación</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="./pidetucita.html">Pide tu Cita</a>
+                    </li>
+                    <li>
+                        <a href="./iniciarsesion.html">Iniciar Sesion</a>
+                    </li>
+                </ul>
+
+            </nav>
+            </div>
+            </div>
+        </header>
+        </nav>
+        <div class="navpaginaactual">
+            <pre>
+             <strong>Actualmente se encuentra en: </strong> <em>Modulo de empleados</em>
+            </pre>
+        </div>
+
+        <div class="regresar" style="align-content: center">
+            <strong>
+                <a href="../paginas/modulos.html"> << Regresar al menu de modulos >></a>
+            </strong>
+        </div>
+
+        <div class="container empleados">
+         
+            <form>
+                <fieldset disabled>
+                  <legend>Ingrese Datos del Empleado:</legend>
+                  <div class="emp-3">
+                    <label for="name" class="form-label">Datos Personales </label><br>
+                    <label for="disabledTextInput" class="form-label">Codigo de Empleado: </label>
+                    <input type="number" placeholder="codigo" value="5">
+                    
+                </fieldset>
+                <label for="name" class="form-label">Nombre Empleado: </label>
+                <input type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese el Nombre del Empleado" value="Juan" readonly=readonly>
+                <br>
+                <label for="name" class="form-label">Apellido Empleado: </label>
+                 <input type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese el Apellido del Empleado" value="Martinez" readonly=readonly>
+                 <br>
+                 <label for="tel" class="form-label">Telefono: </label>
+                 <input type="text" class="form-control" id="validationCustom01" required placeholder="####-####" style="width: 200px;" value="9556-3040" readonly=readonly>
+                 <br>
+                 <label for="validationDefault03" class="form-label">Identidad: </label>
+                 <input type="text" class="form-control" id="validationCustom01" required placeholder="####-####-#####" value="1001-1999-00289" readonly=readonly>
+                <br>
+                 <label for="exampleFormControlInput1" class="form-label">Fecha de nacimiento: </label>
+                 <input type="datetime" class="form-control" id="validationCustom01" required placeholder="dd/mm/aaaa --:--" value="01/05/1990 10:47" readonly=readonly>
+                 <br>
+                
+                <label for="name" class="form-label">Datos Empresariales </label><br>
+                <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Puesto: </label>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" disabled=disabled>
+                   <option selected> Psiquiatra</option>
+                   <option value="1">Psiquiatra</option>
+                   <option value="2">Terapeuta</option>
+                   <option value="3">Secretario</option>
+                 </select>
+                <br>
+                <label for="exampleFormControlInput1" class="form-label">Correo Electronico: </label>
+                <input type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese Correo Electronico" value="juanmartinez@gmail.com" readonly=readonly>
+                <br>
+                <label for="exampleFormControlInput1" class="form-label">Usuario: </label>
+                <input type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese su Usuario" value="jmartinez" readonly=readonly>
+                <br>
+                <label for="exampleFormControlInput1" class="form-label">Contraseña: </label>
+                <input type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese su Contraseña" value="*****" readonly=readonly>
+                <br>
+                <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Estado del Empleado: </label>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" disabled=disabled>
+                   <option selected> Activo </option>
+                   <option value="1">Activo</option>
+                   <option value="2">Inactivo</option>
+                 </select>
+
+                <br>
+
+                <div style="text-align: center;">
+                    <button type="button" class="btn btn-success">Agregar</button>
+                    <a  href="../modulos/moduloempleados.html"><button type="button" class="btn btn-danger">Cancelar</button></a>
+                </div><br>
+              </form>
+        </div>
+
+
+        <footer>
+            <div class="main-content">
+                <div class="left box">
+                    <h2>SaluMent</h2>
+                    <div class="content">
+                        <p>La salud mental incluye nuestro bienestar emocional, psicológico y social. Afecta la forma en que pensamos, sentimos y actuamos cuando enfrentamos la vida. También ayuda a determinar cómo manejamos el estrés, nos relacionamos con
+                            los demás y tomamos decisiones. La salud mental es importante en todas las etapas de la vida, desde la niñez y la adolescencia hasta la adultez y la vejez.</p>
+                        <div class="social">
+                            <a target="_blank" href="https://www.facebook.com/inssaludment"><span class="fab fa-facebook-f"></span></a>
+                            <a target="_blank" href="https://twitter.com/MentSalu"><span class="fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://www.instagram.com/salu.ment/"><span class="fab fa-instagram"></span></a>
+                            <a target="_blank" href="#"><span class="fab fa-youtube"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center box">
+                    <h2>Ubicación</h2>
+                    <div class="content">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text">Tegucigalpa, Honduras</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text">1234-5678</span>
+                        </div>
+                        <div class="email">
+                            <span class="fas fa-envelope"></span>
+                            <span class="text">inssalument@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <img src="../imagenes/logo pagina proyecto_preview_rev_1.png" alt="">
+                </div>
+            </div>
+            <div class="bottom">
+                <center>
+                    <span class="credit">Desarrollado por Isis Zapata - Hacknel - Jose Figueroa - Olman Garcia |
+                    </span>
+                    <span class="far fa-copyright"></span><span> 2021.</span>
+                </center>
+            </div>
+        </footer>
+
+    </main>
+</body>
+
+</html>
