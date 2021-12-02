@@ -7,17 +7,15 @@ const cuerpoTabla = document.getElementById("cuerpoTabla");
 
 let arregloDetalle = [];
 
-const redibujarTabla =()=>{
-
-    arregloDetalle.forEach((detalle)=>{
-       
+const redibujarTabla= () => {
+    cuerpoTabla.innerHTML = "";
+    arregloDetalle.forEach((detalle) => {
         let fila = document.createElement("tr");
-        fila.innerHTML=`<td>${detalle.cant}</td>
-                        <td>${detalle.descripcion}</td>
-                        <td>${detalle.pUnit}</td>
-                        <td>${detalle.pTotal}</td>`;
+        fila.innerHTML = `<td>${detalle.cant}</td>
+                      <td>${detalle.descripcion}</td>
+                      <td>${detalle.pUnit}</td>
+                      <td>${detalle.pTotal}</td>`;
         let tdEliminar = document.createElement("td");
-
         let botonEliminar = document.createElement("button");
         botonEliminar.classList.add("btn", "btn-danger");
         botonEliminar.innerText = "Eliminar";
