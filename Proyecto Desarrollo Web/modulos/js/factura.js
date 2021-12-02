@@ -12,9 +12,9 @@ const redibujarTabla =()=> {
     arregloDetalle.forEach((detalle)=>{
         let fila = document.createElement("tr");
         fila.innerHTML = `<td>${detalle.cant}</td>
-                    <td>${detalle.descripcion}</td>
-                    <td>${detalle.pUnit}</td>
-                    <td>${detalle.pTotal}</td>`;
+                        <td>${detalle.descripcion}</td>
+                        <td>${detalle.pUnit}</td>
+                        <td>${detalle.pTotal}</td>`;
         let tdEliminar = document.createElement("td");
 
         let botonEliminar = document.createElement("button");
@@ -26,7 +26,7 @@ const redibujarTabla =()=> {
     });
 };
 
-formDetalle.onsubmit=(e)=> {
+formDetalle.onsubmit= (e) => {
     e.preventDefault();
     //creando el objeto detalle
     const objDetalle = {
@@ -37,5 +37,4 @@ formDetalle.onsubmit=(e)=> {
     };
     arregloDetalle.push(objDetalle);
     redibujarTabla();
-
 }
