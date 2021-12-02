@@ -1,116 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="imagenes/x-icon" href="../imagenes/icono.png">
-    <link rel="stylesheet" href="../estilos/estiloTratamientos.css">
-    <link rel="stylesheet" href="../estilos/estiloBlog.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>Modulo de Facturas</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
-    <main>
-        <header class="header">
-            <div class="logo-header">
-                <div>
-                    <img src="../imagenes/logo pagina proyecto_preview_rev_1.png" alt="">
+        <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"
+        >
+
+        <script src="../JS/factura.js"></script>
+        
+         <!-- Estilo colocar btn agregar factura -->
+         <style>
+             .contenedor-boton{
+                 align-items: center;
+                 display: flex;
+                 justify-content: center;
+             }
+         </style>
+        <title>Modulo de Facturas</title>
+        
+    </head>
+
+    <body class="bg-light container ">
+
+        <h1 class="display-4 text-danger">Factura</h1>
+        <hr>
+
+        <main class="bg-light container">
+            <section class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Cabecera de Factura</h3>
+                        </div>
+                        <div class="card-body">
+                            <form class="row">
+                                <div class="form-group col-md-4">
+                                    <label for="">Razon Social</label>
+                                    <input type="text" 
+                                    class="form-control" 
+                                    placeholder="Razon Social"
+                                    id="inputNombre"
+                                    >
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="">RUC</label>
+                                    <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    placeholder="Ejm.104522548"
+                                    id="inputRuc"
+                                    >
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="">Nro</label>
+                                    <input type="text"
+                                    class="form-control" 
+                                    placeholder="Ejm.001"
+                                    id="inputNro"
+                                    >
+                                </div>
+
+                                <div class="form-group col-md-8">
+                                    <label for="">Direccion</label>
+                                    <input type="text" 
+                                    class="form-control" 
+                                    placeholder="Ejm.Calle Principal"
+                                    id="inputDireccion"
+                                    >
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="">Fecha Factura:</label>
+                                    <input type="date" 
+                                    class="form-control"
+                                    id="inputFecha"
+                                    >
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <nav class="nav-menu">
-
-                <ul>
-                    <li style="display: inline;">
-                        <a href="../index.html">Pagina de Inicio</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="./quienessomos.html">Quienes somos</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="./blog.html">Blog</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="./tratamientos.html">Tratamientos</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="./testimonios.html">Testimonios</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="./ubicacion.html">Ubicación</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="./pidetucita.html">Pide tu Cita</a>
-                    </li>
-                    <li>
-                        <a href="./iniciarsesion.html">Iniciar Sesion</a>
-                    </li>
-                </ul>
-
-            </nav>
-            </div>
-            </div>
-        </header>
-        </nav>
-        <div class="navpaginaactual">
-            <pre>
-             <strong>Actualmente se encuentra en: </strong> <em>Modulo de facturas</em>
-            </pre>
-        </div>
-
-       
+            </section>
 
 
-        <footer>
-            <div class="main-content">
-                <div class="left box">
-                    <h2>SaluMent</h2>
-                    <div class="content">
-                        <p>La salud mental incluye nuestro bienestar emocional, psicológico y social. Afecta la forma en que pensamos, sentimos y actuamos cuando enfrentamos la vida. También ayuda a determinar cómo manejamos el estrés, nos relacionamos con
-                            los demás y tomamos decisiones. La salud mental es importante en todas las etapas de la vida, desde la niñez y la adolescencia hasta la adultez y la vejez.</p>
-                        <div class="social">
-                            <a target="_blank" href="https://www.facebook.com/inssaludment"><span class="fab fa-facebook-f"></span></a>
-                            <a target="_blank" href="https://twitter.com/MentSalu"><span class="fab fa-twitter"></span></a>
-                            <a target="_blank" href="https://www.instagram.com/salu.ment/"><span class="fab fa-instagram"></span></a>
-                            <a target="_blank" href="#"><span class="fab fa-youtube"></span></a>
+            <section>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <form class="row" id="formDetalle">
+                                    <div class="form-group col-md-2">
+                                        <label for="">Cantidad</label>
+                                        <input type="number" class="form-control" id="inputCantidad">
+                                    </div>
+                                    <div class="form-group col-md-5">
+                                        <label for="">Descripcion</label>
+                                        <select id="selectDescripcion" class="form-control">
+                                            <option value="0">--seleccione--</option>
+                                            <option value="1">Producto 1</option>
+                                            <option value="2">Producto 2</option>
+                                            <option value="3">Producto 3</option>
+                                            <option value="4">Producto 4</option>
+                                            <option value="5">Producto 5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="">P.Unit</label>
+                                        <input type="number" class="form-control" id="inputPUnitario">
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="">P.Total</label>
+                                        <input type="number" class="form-control" id="inputPTotal">
+                                    </div>
+                                    <div class="form-group col-md-1 contenedor-boton">
+                                        <button class="btn btn-primary" type="submit">Agregar</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="center box">
-                    <h2>Ubicación</h2>
-                    <div class="content">
-                        <div class="place">
-                            <span class="fas fa-map-marker-alt"></span>
-                            <span class="text">Tegucigalpa, Honduras</span>
-                        </div>
-                        <div class="phone">
-                            <span class="fas fa-phone-alt"></span>
-                            <span class="text">1234-5678</span>
-                        </div>
-                        <div class="email">
-                            <span class="fas fa-envelope"></span>
-                            <span class="text">inssalument@gmail.com</span>
-                        </div>
-                    </div>
+                <div class="col mt-4">
+                    <button class="btn btn-dark btn-large">
+                        Guardar Factura
+                    </button>
+
                 </div>
+            </section>
 
-                <div class="right">
-                    <img src="../imagenes/logo pagina proyecto_preview_rev_1.png" alt="">
+            <section class="row mt-4">
+                <div class="col">
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <th>Cantidad</th>
+                                <th>Dscripcion</th>
+                                <th>P. Untario</th>
+                                <th>P. Total</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody class="cuerpoTabla">
+
+                        </tbody>
+                    </table>
                 </div>
-            </div>
-            <div class="bottom">
-                <center>
-                    <span class="credit">Desarrollado por Isis Zapata - Hacknel - Jose Figueroa - Olman Garcia |
-                    </span>
-                    <span class="far fa-copyright"></span><span> 2021.</span>
-                </center>
-            </div>
-        </footer>
+            </section>
+        </main>
 
-    </main>
-</body>
-
+        <script>
+            src="https//code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4c+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        </script>
+    
+        <script>
+            src="https://cdn.jsdelivr.net//npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735SK7lN"
+            crossorigin="anonymous"
+        </script>
+    
+        <script>
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"
+        </script>
+           
+    </body> 
 </html>
