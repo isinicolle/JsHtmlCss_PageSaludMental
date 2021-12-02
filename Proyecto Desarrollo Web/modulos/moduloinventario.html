@@ -66,7 +66,7 @@
             </strong>
         </div>
      
-        <div class="container p-2 border" style="background-color: blanchedalmond;">
+        <!--div class="container p-2 border" style="background-color: blanchedalmond;">
                  <form>
                 <fieldset available class="border">
                   <legend>Ingreso De Datos de Inventario</legend>
@@ -133,8 +133,9 @@
                 </form>
                 </div>
                 <br>
-                <div class="container p-3 my-3 border" style="background-color: blanchedalmond;">
-                    <table class="table-hover" style="text-align: center; background-color: blanchedalmond;">
+            -->
+                <div class="container p-3 my-3" style="border-style: solid; background-color: blanchedalmond;">
+                    <table class= "table-hover" style=" text-align: center; background-color: blanchedalmond;">
                         <h3 style="text-align: center;">Tabla de Inventario</h3>
                         <thead>
                             
@@ -162,30 +163,67 @@
                                 <td colspan="2">10/11/2021</td>
                                 <td colspan="2">31/12/2021</td>
                                 <td colspan="2">Cristopher Lozano</td>
+                                
                                
                             </tr>
                             <tr>
                                 <td scope="row">2</td>
-                                <td colspan="2">1</td>
-                                <td colspan="2">1</td>
+                                <td colspan="2">5</td>
+                                <td colspan="2">2</td>
                                 <td colspan="2">Prozac</td>
                                 <td colspan="2">10mg</td>
                                 <td colspan="2">10</td>
                                 <td colspan="2">10/11/2021</td>
                                 <td colspan="2">31/12/2021</td>
                                 <td colspan="2">Jessy Diaz</td>
+                        
+                            </tr>
+                            <tr>
+                                <td scope="row">3</td>
+                                <td colspan="2">3</td>
+                                <td colspan="2">7</td>
+                                <td colspan="2">Prozac</td>
+                                <td colspan="2">20mg</td>
+                                <td colspan="2">10</td>
+                                <td colspan="2">10/11/2021</td>
+                                <td colspan="2">31/12/2021</td>
+                                <td colspan="2">Cristiano Ronaldo</td>
+
+                            </tr>
+                            <tr>
+                                <td scope="row">4</td>
+                                <td colspan="2">2</td>
+                                <td colspan="2">10</td>
+                                <td colspan="2">Lorazepam</td>
+                                <td colspan="2">100mg</td>
+                                <td colspan="2">10</td>
+                                <td colspan="2">10/11/2021</td>
+                                <td colspan="2">31/12/2021</td>
+                                <td colspan="2">Diego Maradona</td>
+
                             </tr>
                         </tbody>
                     </table>
                     <br>
                     <table>
                         <div style="text-align: center;">
-                            <button type="button" class="btn btn-success">Insertar</button>
-                            <button type="button" class="btn btn-danger">Eliminar</button>
-                            <button type="button" class="btn btn-primary">Actualizar</button>
+                            <form>
+                                <a href="../modulos/moduloinventarioinsertar.html">
+                                    <button type="button" onclick="alert('Desea ingresar nuevos datos?');" class="btn btn-success">Insertar</button>
+                                </a>
+                                <a href="../modulos/moduloinventarioactualizar.html">
+                                    <button type="button" onclick="alert('Desea actualizar los datos?');" class="btn btn-primary">Actualizar</button>
+                                </a>
+                                <a href="../modulos/moduloinventarioeliminar.html">
+                                    <button type="button" onclick="alert('Desea eliminar datos?');" class="btn btn-danger">Eliminar</button> 
+                                </a>
+                             </form>
+                            
                         </div>
                     </table>
                 </div>
+
+                
         <footer>
             <div class="main-content">
                 <div class="left box">
