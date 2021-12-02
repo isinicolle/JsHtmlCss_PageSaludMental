@@ -26,9 +26,8 @@ const redibujarTabla =()=> {
     });
 };
 
-formDetalle.onsubmit = (e) => {
+formDetalle.onsubmit=(e)=> {
     e.preventDefault();
-
     //creando el objeto detalle
     const objDetalle = {
         cant: inputCantidad.value,
