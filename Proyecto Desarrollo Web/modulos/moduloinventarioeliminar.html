@@ -15,46 +15,11 @@
 
 <body>
     <main>
-        <header class="header">
-            <div class="logo-header">
-                <div>
-                    <img src="../imagenes/logo pagina proyecto_preview_rev_1.png" alt="">
-                </div>
-            </div>
-            <nav class="nav-menu">
-
-                <ul>
-                    <li style="display: inline;">
-                        <a href="../index.html">Pagina de Inicio</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="./quienessomos.html">Quienes somos</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="./blog.html">Blog</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="./tratamientos.html">Tratamientos</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="./testimonios.html">Testimonios</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="./ubicacion.html">Ubicación</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="./pidetucita.html">Pide tu Cita</a>
-                    </li>
-                    <li>
-                        <a href="./iniciarsesion.html">Iniciar Sesion</a>
-                    </li>
-                </ul>
-
+        <header style="background: lightsalmon;">
+        <nav style="text-align: center;">
+            <h1 class="display-4 text-danger" >ELIMINAR INVENTARIO</h1>
             </nav>
-            </div>
-            </div>
         </header>
-        </nav>
         <div class="navpaginaactual">
             <pre>
              <strong>Actualmente se encuentra en: </strong> <em>Modulo de inventario</em>
@@ -72,19 +37,19 @@
                   <legend>Ingreso De Datos de Inventario</legend>
                   <div class="mb-3">
                     <label for="disabledTextInput" class="form-label">Codigo de Producto: </label>
-                    <input type="number" placeholder="codigo Producto" value="1">
+                    <input type="number" placeholder="codigo Producto" value="1" min="1">
                 </fieldset>
                 <br>
                 <fieldset available class="border">
                     <div class="mb-3">
                       <label for="disabledTextInput" class="form-label">Codigo de Compras: </label>
-                      <input type="number" placeholder="codigo compras" value="1">
+                      <input type="number" placeholder="codigo compras" value="1" min="1">
                   </fieldset>
                   <br>
                   <fieldset available class="border">
                       <div class="mb-3">
                         <label for="disabledTextInput" class="form-label">Codigo de Empleado: </label>
-                        <input type="number" placeholder="codigo Empleado" value="1">
+                        <input type="number" placeholder="codigo Empleado" value="1" min="1">
                     </fieldset>
                 
                 <br>
@@ -96,11 +61,11 @@
                 <label for="exampleFormControlSelect2 form-group form-select form-select-lg mb-5">Cantidad Disponibles</label>
                 <select class="form-control border">
                     <option></option>
-                    <option>5</option>
-                    <option>10</option>
-                    <option>15</option>
-                    <option>20</option>
-                    <option>25</option>
+                    <option>5 cajas</option>
+                    <option>10 cajas</option>
+                    <option>15 cajas</option>
+                    <option>20 cajas</option>
+                    <option>25 cajas</option>
                   </select>
                     <br>
                     <label for="exampleFormControlSelect2 form-group form-select form-select-lg mb-5">Cantidad Vencidas</label>
@@ -123,14 +88,18 @@
                       <div class="row" >
                         <div class="col">
                             <img src="../imagenes/lorazepam.jpg" alt="lorazepam" width="500px" height="300px" >
+                            <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
                         </div>
                         <div class="col">
                             <img src="../imagenes/prozac.jpg" alt="prozac" width="500px" height="300px" >
+                            <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
                         </div>
                       </div> 
                       <br>
                       <div style="text-align: center;">
-                        <button type="button" class="btn btn-danger">Eliminar</button>
+                        <a href="../modulos/moduloinventario.html">
+                            <button type="button" onclick="alert('Ha eliminado producto del inventario')" class="btn btn-danger">Eliminar</button>
+                        </a>
                         </div>
                 </form>
                 </div>
