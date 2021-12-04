@@ -31,156 +31,37 @@
             </strong>
         </div>
      
-        <!--div class="container p-2 border" style="background-color: blanchedalmond;">
-                 <form>
-                <fieldset available class="border">
-                  <legend>Ingreso De Datos de Inventario</legend>
-                  <div class="mb-3">
-                    <label for="disabledTextInput" class="form-label">Codigo de Producto: </label>
-                    <input type="number" placeholder="codigo Producto" value="1">
-                </fieldset>
-                <br>
-                <fieldset available class="border">
-                    <div class="mb-3">
-                      <label for="disabledTextInput" class="form-label">Codigo de Compras: </label>
-                      <input type="number" placeholder="codigo compras" value="1">
-                  </fieldset>
-                  <br>
-                  <fieldset available class="border">
-                      <div class="mb-3">
-                        <label for="disabledTextInput" class="form-label">Codigo de Empleado: </label>
-                        <input type="number" placeholder="codigo Empleado" value="1">
-                    </fieldset>
-                
-                <br>
-                    <div class="border">
-                    <label for="disabledTextInput form-group form-select" class="form-label">Descripcion: </label>
-                    <input class="form-control form-control-lg" type="Descripcion" placeholder="Descripcion de Producto">
-                 </div>
-                <br>
-                <label for="exampleFormControlSelect2 form-group form-select form-select-lg mb-5">Cantidad Disponibles</label>
-                <select class="form-control border">
-                    <option></option>
-                    <option>5</option>
-                    <option>10</option>
-                    <option>15</option>
-                    <option>20</option>
-                    <option>25</option>
-                  </select>
-                    <br>
-                    <label for="exampleFormControlSelect2 form-group form-select form-select-lg mb-5">Cantidad Vencidas</label>
-                    <select class="form-control border">
-                        <option></option>
-                        <option>5</option>
-                        <option>10</option>
-                        <option>15</option>
-                        <option>20</option>
-                        <option>25</option>
-                      </select>
-                      <br>
-                     <label for="exampleFormControlInput1" class="form-label">Fecha de Compra: </label>
-                     <input type="datetime-local" class="form-control" id="exampleFormControlInput1" placeholder="Fecha de Compra">
-                     <br>
-                     <label for="exampleFormControlInput1" class="form-label">Fecha de Vencimiento: </label>
-                     <input type="datetime-local" class="form-control" id="exampleFormControlInput1" placeholder="Fecha de Vencimiento">
-                      <br>
-                      <label for="exampleFormControlSelect2 form-group form-select form-select-lg mb-5">Imagen de Producto</label>
-                      <div class="row" >
-                        <div class="col">
-                            <img src="../imagenes/lorazepam.jpg" alt="lorazepam" width="500px" height="300px" >
-                        </div>
-                        <div class="col">
-                            <img src="../imagenes/prozac.jpg" alt="prozac" width="500px" height="300px" >
-                        </div>
-                      </div> 
-                      <br>
-                    
-                </form>
-                </div>
-                <br>
-            -->
                 <div class="container p-3 my-3" style="border-style: solid; background-color: blanchedalmond;">
-                    <table class= "table-hover" style=" text-align: center; background-color: blanchedalmond;">
+                    <table id="tabla-inventario" class= "table-hover" style=" text-align: center; background-color: blanchedalmond;">
                         <h3 style="text-align: center;">Tabla de Inventario</h3>
                         <thead>
                             
                             <tr>
-                                <th>Cod. de Producto</th>
                                 <th colspan="2">  Cod. Compra</th>
-                                <th colspan="2">  Cod.Empleado</th>
-                                <th colspan="2">  Nombre De producto</th>
+                                <th colspan="2">  Cod. Producto</th>
                                 <th colspan="2">  Descripcion</th>
                                 <th colspan="2">  Cantidad Disponibles</th>
                                 <th colspan="2">  Fecha de Compra </th>
                                 <th colspan="2">  Fecha de Vencimiento</th>
-                                <th colspan="2">  Empleado Encargado</th>
                               
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td scope="row">1</td>
-                                <td colspan="2">1</td>
-                                <td colspan="2">1</td>
-                                <td colspan="2">Lorazepam</td>
-                                <td colspan="2">2mg</td>
-                                <td colspan="2">25</td>
-                                <td colspan="2">10/11/2021</td>
-                                <td colspan="2">31/12/2021</td>
-                                <td colspan="2">Cristopher Lozano</td>
-                                
-                               
-                            </tr>
-                            <tr>
-                                <td scope="row">2</td>
-                                <td colspan="2">5</td>
-                                <td colspan="2">2</td>
-                                <td colspan="2">Prozac</td>
-                                <td colspan="2">10mg</td>
-                                <td colspan="2">10</td>
-                                <td colspan="2">10/11/2021</td>
-                                <td colspan="2">31/12/2021</td>
-                                <td colspan="2">Jessy Diaz</td>
-                        
-                            </tr>
-                            <tr>
-                                <td scope="row">3</td>
-                                <td colspan="2">3</td>
-                                <td colspan="2">7</td>
-                                <td colspan="2">Prozac</td>
-                                <td colspan="2">20mg</td>
-                                <td colspan="2">10</td>
-                                <td colspan="2">10/11/2021</td>
-                                <td colspan="2">31/12/2021</td>
-                                <td colspan="2">Cristiano Ronaldo</td>
 
-                            </tr>
-                            <tr>
-                                <td scope="row">4</td>
-                                <td colspan="2">2</td>
-                                <td colspan="2">10</td>
-                                <td colspan="2">Lorazepam</td>
-                                <td colspan="2">100mg</td>
-                                <td colspan="2">10</td>
-                                <td colspan="2">10/11/2021</td>
-                                <td colspan="2">31/12/2021</td>
-                                <td colspan="2">Diego Maradona</td>
-
-                            </tr>
                         </tbody>
                     </table>
                     <br>
                     <table>
-                        <div style="text-align: center;">
-                            <form>
+                        <div id="control-formulario" style="text-align: center;">
+                            <form >
                                 <a href="../modulos/moduloinventarioinsertar.html">
-                                    <button type="button" onclick="alert('Desea ingresar nuevos datos?');" class="btn btn-success">Insertar</button>
+                                    <button type="button"  class="btn btn-success">Insertar</button>
                                 </a>
                                 <a href="../modulos/moduloinventarioactualizar.html">
                                     <button type="button" onclick="alert('Desea actualizar los datos?');" class="btn btn-primary">Actualizar</button>
                                 </a>
-                                <a href="../modulos/moduloinventarioeliminar.html">
-                                    <button type="button" onclick="alert('Desea eliminar datos?');" class="btn btn-danger">Eliminar</button> 
+                                <a href="#">
+                                    <button type="button"  class="btn btn-danger btn-eliminar">Eliminar</button> 
                                 </a>
                              </form>
                             
@@ -237,6 +118,9 @@
         </footer>
 
     </main>
+
+
+    <script src="../JS/moduloinventario.js"></script>
 </body>
 
 </html>
