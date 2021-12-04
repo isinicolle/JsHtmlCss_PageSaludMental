@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 
     <link rel="icon" type="imagenes/x-icon" href="../imagenes/icono.png">
     <link rel="stylesheet" href="../estilos/estiloTratamientos.css">
     <link rel="stylesheet" href="../estilos/estiloBlog.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    
     
     <title>Ingreso de Tratamientos</title>
 </head>
@@ -72,7 +75,7 @@
                   <br>
                   <div class="mb-3">
                     <label for="disabledTextInput" class="form-label">Codigo de Tratamiento: </label>
-                    <input type="number" placeholder="codigo" value="3"></div>
+                    <input type="number" placeholder="codigo" value="1" min="1"></div>
                
                <br>
                 <div class="row">
@@ -136,9 +139,35 @@
                       
 
                  <div style="text-align: center;">
-                    <button type="button" class="btn btn-success">Agregarar</button>
+                    
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalacagregar">Agregar</button>
                     <a  href="../modulos/modulotratamientos.html"><button type="button" class="btn btn-danger">Cancelar</button></a>
 
+                    <div class="container">
+                        <div class="modal" id="modalacagregar" tabindex="-1" role="dialog" aria-labelledby="tituloventana" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 id="tituloventana">Datos Guardados</h5>
+                        <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="alert alert-success">
+                                <h6><strong>Tus datos se han Guardado</strong></h6>
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning" type="button" data-dismiss="modal">
+                               Aceptar
+                            </button>
+                            
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
                    
               </form>
         
@@ -201,6 +230,9 @@
         </footer>
 
     </main>
+    <script type="text/javascript" src="../Js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="../Js/popper.min.js"></script>
+    <script type="text/javascript" src="../Js/bootstrap.min.js"></script>
 </body>
 
 </html>

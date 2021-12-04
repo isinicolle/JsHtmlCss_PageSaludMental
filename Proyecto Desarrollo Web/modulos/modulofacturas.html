@@ -37,7 +37,7 @@
                             <h3 class="card-title">Cabecera de Factura</h3>
                         </div>
                         <div class="card-body">
-                            <form class="row">
+                            <form class="row" id="formCabecera">
                                 <div class="form-group col-md-4">
                                     <label for="">Razon Social</label>
                                     <input type="text" 
@@ -101,20 +101,16 @@
                                         <label for="">Descripcion</label>
                                         <select id="selectDescripcion" class="form-control">
                                             <option value="0">--seleccione--</option>
-                                            <option value="1">Producto 1</option>
-                                            <option value="2">Producto 2</option>
-                                            <option value="3">Producto 3</option>
-                                            <option value="4">Producto 4</option>
-                                            <option value="5">Producto 5</option>
+
                                         </select>
                                     </div>
                                     <div class="form-group col-md-2">
                                         <label for="">P.Unit</label>
-                                        <input type="number" class="form-control" id="inputPUnitario">
+                                        <input type="number" class="form-control" id="inputPUnitario" disabled>
                                     </div>
                                     <div class="form-group col-md-2">
                                         <label for="">P.Total</label>
-                                        <input type="number" class="form-control" id="inputPTotal">
+                                        <input type="number" class="form-control" id="inputPTotal" disabled>
                                     </div>
                                     <div class="form-group col-md-1 contenedor-boton">
                                         <button class="btn btn-primary" type="submit">Agregar</button>
@@ -126,7 +122,7 @@
                 </div>
 
                 <div class="col mt-4">
-                    <button class="btn btn-dark btn-large">
+                    <button class="btn btn-dark btn-large" id="btnGuardar">
                         Guardar Factura
                     </button>
 

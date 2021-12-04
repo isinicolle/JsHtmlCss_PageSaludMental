@@ -32,29 +32,29 @@
         </div>
      
         <div class="container p-2 border" style="border-style: solid; background-color:lightgray">
-                 <form>
+                 <form id="formulario">
                 <fieldset available class="border">
                   <legend>Ingreso De Datos de Inventario</legend>
                   <div class="mb-3">
                     <label for="disabledTextInput" class="form-label" style="text-decoration: solid;">Codigo de Producto: </label> 
-                    <input type="number" placeholder="codigo Producto" value="1" min="1" >
+                    <input type="number" id="codigo-producto" placeholder="codigo Producto" value="1" min="1" >
                 </fieldset>
                 <br>
                 <fieldset available class="border">
                     <div class="mb-3">
                       <label for="disabledTextInput" class="form-label">Codigo de Compras: </label>
-                      <input type="number" placeholder="codigo compras" value="1" min="1">
+                      <input type="number" id="codigo-compra" placeholder="codigo compras" value="1" min="1">
                   </fieldset>
                   <br>
                     <div class="border">
                     <label for="disabledTextInput form-group form-select" class="form-label">Descripcion: </label>
-                    <input required class="form-control form-control-lg" type="Descripcion" placeholder="Descripcion de Producto" required maxlength="25">
+                    <input required class="form-control form-control-lg" type="Descripcion" id="descripcion" placeholder="Descripcion de Producto" required maxlength="25">
                  </div>
                 <br>
                 <label for="exampleFormControlSelect2 form-group form-select form-select-lg mb-5">Cantidad Ingresadas</label>
-                <select class="form-control border">
+                <select  id="cantidad" class="form-control border">
                     <option></option>
-                    <option>5 cajas</option>
+                    <option value="5">5 cajas</option>
                     <option>10 cajas</option>
                     <option>15 cajas</option>
                     <option>20 cajas</option>
@@ -84,7 +84,7 @@
                       <br>
                       <div style="text-align: center;">
                         <a href="../modulos/moduloinventario.html">
-                            <button type="button" onclick="alert('Ha insertado nuevos elementos a la tabla');" class="btn btn-success">Insertar</button>
+                            <button type="submit"   class="btn btn-success">Insertar</button>
                         </a>
                         </div>
                 </form>
@@ -138,7 +138,7 @@
                 </center>
             </div>
         </footer>
-
+        <script src="../JS/moduloinventarioinsertar.js"></script>
     </main>
 </body>
 
