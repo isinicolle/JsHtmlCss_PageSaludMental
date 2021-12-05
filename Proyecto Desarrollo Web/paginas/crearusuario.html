@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagenes/x-icon" href="../imagenes/icono.png">
+    <link rel="stylesheet" href="../estilos/estiloTratamientos.css">
+    <link rel="stylesheet" href="../estilos/pideTuCita.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta charset="UTF-8">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="icon" type="imagenes/x-icon" href="../imagenes/icono.png">
+    <link rel="stylesheet" href="../estilos/estiloTratamientos.css">
+    <link rel="stylesheet" href="../estilos/estiloBlog.css">
+    <link rel="stylesheet" href="../estilos/empleadosInsertar.css">
+    <script defer src="../JS/empleados.js"></script>
+    
+    <title>Pide tu cita</title>
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="logo-header">
+                <div>
+                    <img src="../imagenes/logo pagina proyecto_preview_rev_1.png" alt="">
+                </div>
+            </div>
+            <nav class="nav-menu">
+
+                <ul>
+                    <li style="display: inline;">
+                        <a href="../index.html">Pagina de Inicio</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="./quienessomos.html">Quienes somos</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="./blog.html">Blog</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="./tratamientos.html">Tratamientos</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="./testimonios.html">Testimonios</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="./ubicacion.html">Ubicación</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="./pidetucita.html">Pide tu Cita</a>
+                    </li>
+                    <li>
+                        <a href="./iniciarsesion.html">Iniciar Sesion</a>
+                    </li>
+                </ul>
+
+            </nav>
+            </div>
+            </div>
+        </header>
+        </nav>
+        <div class="navpaginaactual">
+            <pre>
+             <strong>Actualmente se encuentra en: </strong> <em>Creacion de usuario</em>
+            </pre>
+        </div>
+
+        <div class="container empleados">
+         
+            <form class="formulario" id="formulario">
+                    
+                    <br>
+                        <legend><p><h1><u>Crear Usuario</u></h1></p></legend><br><br>
+                        <label for="name" class="form-label"><strong><h3>Datos Personales:</h3></strong> </label><br>
+
+                      
+                       
+                        <div class="row">
+                            <div class="col">
+                                <!-- Grupo: Nombre -->
+                                <div class="formulario__grupo" id="grupo__nombre">
+                                    <label for="nombre" class="formulario__label">Nombre:</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+                                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario__input-error">El nombre solo puede contener letras, no puede contener numeros y guion bajo.</p>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <!-- Grupo: Apellido-->
+                                <div class="formulario__grupo" id="grupo__apellido">
+                                    <label for="apellido" class="formulario__label">Apellido:</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="John Doe">
+                                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario__input-error">El apellido solo puede contener letras, no puede contener numeros y guion bajo.</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <!-- Grupo: Identidad -->
+                                <div class="formulario__grupo" id="grupo__identidad">
+                                    <label for="identidad" class="formulario__label">Identidad:</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" class="formulario__input" name="identidad" id="identidad" placeholder="1001-2001-00789">
+                                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario__input-error">La identidad solo puede contener numeros y el maximo son 13 dígitos.</p>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <!-- Grupo: Teléfono -->
+                                <div class="formulario__grupo" id="grupo__telefono">
+                                    <label for="telefono" class="formulario__label">Teléfono</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="95956060">
+                                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 8 dígitos.</p>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <!-- Grupo: fecha-->
+                                <div class="formulario__grupo" id="grupo__fecha">
+                                    <label for="fecha" class="formulario__label">Fecha:</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="date" class="formulario__input" name="fecha" id="fecha" placeholder="John Doe">
+                                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario__input-error">Seleccione la fecha.</p>
+                                </div>
+                              </div>
+                        </div>
+                        <br>
+                      <br><br>
+                    
+                      <label for="name" class="form-label"><strong><h3>Datos Empresariales:</h3></strong> </label><br>
+                      <div class="row">
+                        <div class="col">
+                            <div class="formulario__grupo" id="grupo__nombre">
+                            <label for="nombre" class="formulario__label">Puesto: </label>
+                            <!-- Grupo: selector-->
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected> Seleccione un Puesto: </option>
+                                <option value="1">Psicologo</option>
+                                <option value="2">Terapeuta</option>
+                                <option value="3">Psiquiatra</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- Grupo: Correo Electronico -->
+                            <div class="formulario__grupo" id="grupo__correo">
+                                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                                <div class="formulario__grupo-input">
+                                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                            </div>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col">
+                            <!-- Grupo: Usuario -->
+                            <div class="formulario__grupo" id="grupo__usuario">
+                                <label for="usuario" class="formulario__label">Usuario</label>
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                            </div>  
+                          </div>
+                          <div class="col">
+                            <!-- Grupo: Contraseña -->
+                            <div class="formulario__grupo" id="grupo__password">
+                                <label for="password" class="formulario__label">Contraseña</label>
+                                <div class="formulario__grupo-input">
+                                    <input type="password" class="formulario__input" name="password" id="password" placeholder="*****">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                            </div>
+
+                          </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="formulario__grupo" id="grupo__nombre">
+                            <label for="nombre" class="formulario__label">Estado: </label>
+                            <!-- Grupo: selector-->
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="2">Inactivo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="formulario__grupo" id="grupo__correo">
+                                <label for="correo" class="formulario__label"></label>
+                            </div>
+                        </div>
+                      </div><br>
+                      <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                    </div>
+        
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" id="submit-btn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Soliticar Usuario</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                    </div>
+                    <br>
+                   
+                 
+                    
+                
+              </form>
+              <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <h4 class="modal-title">Enviar informacion</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                    Se ha solicitado el usuario , espere a su activacion
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar Cambios</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+            
+                </div>
+                </div>
+            </div>
+
+        </div>
+            <!-- ----------------------------------------------------------------------------->
+      
+
+        <footer>
+            <div class="main-content">
+                <div class="left box">
+                    <h2>SaluMent</h2>
+                    <div class="content">
+                        <p>La salud mental incluye nuestro bienestar emocional,
+                            psicológico y social. Afecta la forma en que pensamos,
+                            sentimos y actuamos cuando enfrentamos la vida. También ayuda a determinar
+                            cómo manejamos el estrés, nos relacionamos con los demás y tomamos decisiones.
+                            La salud mental es importante en todas las etapas de la vida, desde la niñez y la
+                            adolescencia
+                            hasta la adultez y la vejez.</p>
+                        <div class="social">
+                            <a target="_blank" href="https://www.facebook.com/inssaludment"><span
+                                    class="fab fa-facebook-f"></span></a>
+                            <a target="_blank" href="https://twitter.com/MentSalu"><span class="fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://www.instagram.com/salu.ment/"><span class="fab fa-instagram"></span></a>
+                            <a target="_blank" href="#"><span class="fab fa-youtube"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center box">
+                    <h2>Ubicación</h2>
+                    <div class="content">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text">Tegucigalpa, Honduras</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text">1234-5678</span>
+                        </div>
+                        <div class="email">
+                            <span class="fas fa-envelope"></span>
+                            <span class="text">inssalument@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <img src="../imagenes/logo pagina proyecto_preview_rev_1.png" alt="">
+                </div>
+            </div>
+            <div class="bottom">
+                <center>
+                    <span class="credit">Desarrollado por Isis Zapata - Hacknel - Jose Figueroa - Olman Garcia |
+                    </span>
+                    <span class="far fa-copyright"></span><span> 2021.</span>
+                </center>
+            </div>
+        </footer>
+
+    </main>
+</body>
+
+</html>
