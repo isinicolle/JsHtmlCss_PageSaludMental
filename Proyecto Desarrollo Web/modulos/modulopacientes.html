@@ -67,11 +67,17 @@
                 <a href="../paginas/modulos.html" style="color: darkslateblue;"> << Regresar al menu de modulos</a>
             </strong>
         </div>
+        <div class="buscar">
+            <br>
+            Buscar: 
+            <input type="email" class="form-control"  placeholder="Ingrese por nombre a quien busca en el listado">  
+           <br>
+        </div>
         <div class="container p-2" style="background-color:gainsboro">
          
             <div class="container p-3 my-3">
                 <!--Tabla de datos de pacientes-->
-                <table class="table-bordered  table-hover" style="text-align: center;">
+                <table id="tabla-paciente" class="table-bordered  table-hover" style="text-align: center;">
                     <h3 style="text-align: center;">Listado de Pacientes</h3>
                     <thead>
                         
@@ -157,10 +163,10 @@
                     </tbody>
                 </table>
                 <br>
-                <div style="text-align: center;">
+                <div id="control-formulario" style="text-align: center;">
                     <a href="./modulopacientesinsertar.html">     <button type="button" class="btn btn-success">Agregar Paciente</button></a>
                
-                    <a href="./modulopacienteseliminar.html"> <button type="button" class="btn btn-danger">Eliminar Paciente</button> </a>
+                    <a href="./modulopacienteseliminar.html"> <button type="button" class="btn btn-danger btn-eliminar">Eliminar Paciente</button> </a>
 
                     <a href="./modulopacientesactualizar.html"> <button type="button" class="btn btn-warning">Actualizar Paciente</button> </a>
                     
@@ -217,8 +223,9 @@
                 </center>
             </div>
         </footer>
-
+        
     </main>
+    <script src="../JS/modulopaciente.js"></script>
 </body>
 
 </html>
