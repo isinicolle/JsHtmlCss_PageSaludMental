@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
     <link rel="icon" type="imagenes/x-icon" href="../imagenes/icono.png">
     <link rel="stylesheet" href="../estilos/estiloTratamientos.css">
     <link rel="stylesheet" href="../estilos/estiloBlog.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    
     <title>Modulo de Tratamientos</title>
 </head>
 
@@ -21,42 +20,10 @@
             <div class="logo-header">
                 <div>
                     <img src="../imagenes/logo pagina proyecto_preview_rev_1.png" alt="">
+                    <h1><strong>Tratamientos</strong></h1>
                 </div>
             </div>
-            <nav class="nav-menu">
-
-                <ul>
-                    <li style="display: inline;">
-                        <a href="../index.html">Pagina de Inicio</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="../paginas/quienessomos.html">Quienes somos</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="../paginas/blogdeinicio.html">Blog</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="../paginas/tratamientos.html">Tratamientos</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="../paginas/testimonios.html">Testimonios</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="../paginas/ubicacion.html">Ubicación</a>
-                    </li>
-                    <li style="display: inline;">
-                        <a href="../paginas/pidetucita.html">Pide tu Cita</a>
-                    </li>
-                    <li>
-                        <a href="../paginas/iniciarsesion.html">Iniciar Sesion</a>
-                    </li>
-                </ul>
-
-            </nav>
-            </div>
-            </div>
         </header>
-        </nav>
         <div class="navpaginaactual">
             <pre>
              <strong>Actualmente se encuentra en: </strong> <em>Modulo de Tratamientos</em>
@@ -67,72 +34,75 @@
                 <a href="../paginas/modulos.html"> << Regresar al menu de modulos</a>
             </strong>
         </div>
-        <div style="display: inline-block; margin-left: 58%;">
-            <input type="text" id="validationCustom03" style="width: 300px;" required placeholder="Ingrese el nombre del tratamiento">
-            <a  href=""><button type="button" class="btn btn-secondary">Buscar Tratamiento</button></a>
-            <br>
-            <br>
-        </div>      
-        <div class="container p-2" >
-        </div>
+     
+                <div class="container p-3 my-3">
+                    <table id="tabla-tratamiento" class= "table-hover table-bordered" style=" margin: 0 auto; text-align: center; background-color: rgb(255, 244, 148);">
+                        
+                        <h3 style="text-align: center;">Tabla de Inventario</h3>
+                        <thead>
+                            
+                            <tr>
+                    <th colspan="2">  Codigo Tratamiento</th>
+                    <th colspan="2">  Cita con</th>
+                    <th colspan="2">  Paciente</th>
+                    <th colspan="2">  Condición</th>
+                    <th colspan="2">  Descripcion de la Condición</th>
+                    <th colspan="2">  Nombre Tratamiento</th>
+                    <th colspan="2">  Descripcion Tratamiento</th>
+                    <th colspan="2">  Precio</th>
+                              
+                            </tr>
+                        </thead>
+                        <tbody>
 
-         <!------------------------------------------------------------------------------------------->
-        <br>
-        <div class="container p-3 my-3">
-        <!--Tabla de datos de pacientes-->
-        <table class="table-bordered table-hover" style="margin: 0 auto; text-align: center; background-color: rgb(253, 255, 149);">
-            <h3 style="text-align: center;">Tratamientos</h3>
-           
-            <thead>  
-                <tr>
-                    <th>COD</th>
-                    <th colspan="1">  Cita con</th>
-                    <th colspan="1">  Paciente</th>
-                    <th colspan="1">  Condición</th>
-                    <th colspan="1">  Descripcion de la Condición</th>
-                    <th colspan="1">  Nombre Tratamiento</th>
-                    <th colspan="1">  Descripcion Tratamiento</th>
-                    <th colspan="1">  Precio</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td scope="row">1</td>
-                    <td colspan="1">Bryan Hernandez</td>
-                    <td colspan="1">Arnaldo Padilla</td>
-                    <td colspan="1">Traumatismo</td>
-                    <td colspan="1">lesiones o heridas físicas que sufre el paciente en sus órganos o tejidos</td>
-                    <td colspan="1">Medicación</td>
-                    <td colspan="1">Reposo y medicación</td>
-                    <td colspan="1">L.1900.00</td>
-                </tr>
-                <tr>
-                    <td scope="row">2</td>
-                    <td colspan="1">Alex Espino</td>
-                    <td colspan="1">Lorena	Zamorano</td>
-                    <td colspan="1">Demensia</td>
-                    <td colspan="1">deterioro grave de la capacidad mental</td>
-                    <td colspan="1">Psicoterapia</td>
-                    <td colspan="1">Terapia Psicológica</td>
-                    <td colspan="1">L.2450.00</td>
-                </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table>
+                        <div id="control-formulario" style="text-align: center;">
+                            <form class="container">
+                                <a href="../modulos/modulotratamientosinsertar.html">
+                                    <button type="button"  class="btn btn-success">Insertar</button>
+                                </a>
+                                <a href="../modulos/modulotratamientosactualizar.html">
+                                    <button type="button" onclick="alert('Desea actualizar los datos?');" class="btn btn-primary">Actualizar</button>
+                                </a>
+                               
+                                <a href="#">
+                                    <button type="button"  class="btn btn-danger btn-eliminar" data-toggle="modal" data-target="#ventanamodal">Eliminar</button> 
+                                </a>
+                                    <div class="modal" id="ventanamodal" tabindex="-1" role="dialog" aria-labelledby="tituloventana" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 id="tituloventana">Tratamientos eliminados</h5>
+                                    <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="alert alert-success">
+                                            <h6><strong>Los datos se han eliminado</strong></h6>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-warning" type="button" data-dismiss="modal">
+                                           Aceptar
+                                        </button>
+                                        
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                            
+                                
+                             </form>
+                            
+                        </div>
+                    </table>
+                </div>
+
                 
-            </tbody>
-        </table>
-    </div>
-
-
-    <div style="text-align: center;">
-        <a  href="../modulos/modulotratamientosinsertar.html"><button type="button" class="btn btn-success">Agregar Tratamiento</button></a>
-        <a  href="../modulos/modulotratamientosactualizar.html"><button type="button" class="btn btn-warning">Actualizar Tratamiento</button></a>
-
-        <a  href="../modulos/modulotratamientoseliminar.html"><button type="button" class="btn btn-danger">Eliminar Tratamiento</button></a>
-        <!-------<button type="button" class="btn btn-danger">Eliminar</button></div>--->
-    </div>
-</div>
-<br>
-<br>
-<!------------------------------------------------------------------------------------------->
         <footer>
             <div class="main-content">
                 <div class="left box">
@@ -172,9 +142,8 @@
                 </div>
             </div>
             <div class="bottom">
-
                 <center>
-                    <span class="credit">Desarrollado Jessy Díaz|
+                    <span class="credit">Desarrollado por Isis Zapata - Jessy Diaz - Cristopher - Jose Figueroa - Olman Garcia |
                     </span>
                     <span class="far fa-copyright"></span><span> 2021.</span>
                 </center>
@@ -182,6 +151,11 @@
         </footer>
 
     </main>
+
+    <script type="text/javascript" src="../Js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="../Js/popper.min.js"></script>
+    <script type="text/javascript" src="../Js/bootstrap.min.js"></script>
+    <script src="../JS/modulotratamientos.js"></script>
 </body>
 
 </html>
