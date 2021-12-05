@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="../estilos/estiloTratamientos.css">
     <link rel="stylesheet" href="../estilos/estiloBlog.css">
     <link rel="stylesheet" href="../estilos/empleadosInsertar.css">
-    <script defer src="../JS/empleados.js"></script>
-    
+
     <title>Modulo de Empleados</title>
 </head>
 
@@ -83,7 +82,7 @@
                        <div>
                             
                             <label for="name" class="form-label">Codigo de Empleado: </label>
-                            <input type="number" placeholder="codigo" value="3" disabled="disabled">
+                            <input type="number" id="codigo_Empleado" placeholder="codigo" value="3" disabled="disabled">
                             <img src="../imagenes/usuario.png" class="rounded float-end" alt="305" height="190" width="190">
                         </div>
                        
@@ -96,7 +95,7 @@
                                         <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
-                                    <p class="formulario__input-error">El nombre solo puede contener letras, no puede contener numeros y guion bajo.</p>
+                                    <p class="formulario__input-error">El nombre solo puede contener letras, no puede contener numeros y simbolos.</p>
                                 </div>
                               </div>
                               <div class="col">
@@ -107,7 +106,7 @@
                                         <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="John Doe">
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
-                                    <p class="formulario__input-error">El apellido solo puede contener letras, no puede contener numeros y guion bajo.</p>
+                                    <p class="formulario__input-error">El apellido solo puede contener letras, no puede contener numeros y simbolos.</p>
                                 </div>
                               </div>
                         </div>
@@ -219,21 +218,22 @@
                             </div>
                         </div>
                       </div><br>
+
                       <div class="formulario__mensaje" id="formulario__mensaje">
                         <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
                     </div>
         
                     <div class="formulario__grupo formulario__grupo-btn-enviar">
-                        <button type="submit" class="btn btn-success">Enviar</button>
+                        <button type="submit" class="btn btn-success">Guardar</button>
                         <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                     </div>
                     <br>
                     <div style="text-align: center;">
                         <button type="submit" id="submit-btn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Agregar</button>
                         <a  href="../modulos/moduloempleados.html"><button type="button" class="btn btn-danger">Cancelar</button></a>
-                    </div><br>
-                    
-                
+                    </div>
+                    <br>
+
               </form>
               <!-- The Modal -->
             <div class="modal fade" id="myModal">
