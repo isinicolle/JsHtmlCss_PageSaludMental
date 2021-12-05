@@ -28,7 +28,7 @@ function enviarFormulario(e) {
   const fechaNacimiento = document.querySelector("#fecha-nacimiento").value;
   const identidad = document.querySelector("#identidad").value;
   const ocupacion = document.querySelector("#ocupacion").value;
-  const genero = document.querySelector("#genero").value;
+
 
   if (
     codigoPaciente === "" ||
@@ -39,8 +39,7 @@ function enviarFormulario(e) {
     telefonoParticular === "" ||
     fechaNacimiento === "" ||
     identidad === "" ||
-    ocupacion === "" ||
-    genero === ""
+    ocupacion === "" 
   ) {
     mostrarAlerta();
     return;
@@ -56,7 +55,7 @@ function enviarFormulario(e) {
     fechaNacimiento,
     identidad,
     ocupacion,
-    genero,
+
   };
 
   paciente = [...paciente, paci];

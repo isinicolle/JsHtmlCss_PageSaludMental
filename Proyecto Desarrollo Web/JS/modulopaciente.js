@@ -36,7 +36,7 @@ function pacienteHTML(pacie) {
         fechaNacimiento,
         identidad,
         ocupacion,
-        genero
+ 
     } = paci;
 
     const row = document.createElement("tr");
@@ -52,7 +52,7 @@ function pacienteHTML(pacie) {
             <td colspan="2"> ${fechaNacimiento} </td>
             <td colspan="2"> ${identidad} </td>
             <td colspan="2"> ${ocupacion} </td>
-            <td colspan="2"> ${genero} </td>
+           
 
         `;
 
