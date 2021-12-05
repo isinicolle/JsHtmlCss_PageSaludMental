@@ -13,54 +13,50 @@
         >
 
          <!-- Estilo colocar btn agregar factura -->
-         <style>
-             .contenedor-boton{
-                 align-items: center;
-                 display: flex;
-                 justify-content: center;
-             }
-         </style>
+         
         <title>Modulo de Facturas</title>
         
     </head>
 
     <body class="bg-light container ">
 
-        <h1 class="display-4 text-danger">Factura</h1>
-        <hr>
+        <br>
 
         <main class="bg-light container">
             <section class="row">
                 <div class="col">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Cabecera de Factura</h3>
+                            <h3 class="card-title">Factura SaluMent</h3>
                         </div>
                         <div class="card-body">
-                            <form class="row" id="formCabecera">
+                            <form class="row" id="formulario">
                                 <div class="form-group col-md-4">
-                                    <label for="">Razon Social</label>
+                                    <label for="">Nombre Cliente</label>
                                     <input type="text" 
                                     class="form-control" 
-                                    placeholder="Razon Social"
+                                    placeholder="ingrese aqui su nombre..."
                                     id="inputNombre"
+                                    required
                                     >
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label for="">RUC</label>
+                                    <label for="">Telefono</label>
                                     <input 
                                     type="text" 
                                     class="form-control" 
-                                    placeholder="Ejm.104522548"
+                                    placeholder="Ingrese aqui su telefono..."
                                     id="inputRuc"
+                                    required
                                     >
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label for="">Nro</label>
+                                    <label for="">Numero de Factura</label>
                                     <input type="text"
                                     class="form-control" 
                                     placeholder="Ejm.001"
                                     id="inputNro"
+                                    required
                                     >
                                 </div>
 
@@ -70,6 +66,7 @@
                                     class="form-control" 
                                     placeholder="Ejm.Calle Principal"
                                     id="inputDireccion"
+                                    required
                                     >
                                 </div>
                                 <div class="form-group col-md-4">
@@ -77,55 +74,45 @@
                                     <input type="date" 
                                     class="form-control"
                                     id="inputFecha"
+                                    required
                                     >
                                 </div>
 
+                                <div class="form-group col-md-2">
+                                    <label for="">Cantidad</label>
+                                    <input type="number" class="form-control" id="inputCantidad" required>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="">Descripcion del Examen</label>
+                                    <select id="selectDescripcion" class="form-control" required>
+                                        <option value="0">--seleccione--</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-md-2">
+                                    <label for="">Prec. Unitario</label>
+                                    <input type="number" class="form-control" id="inputPUnitario" disabled required>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="">Prec. Total</label>
+                                    <input type="number" class="form-control" id="inputPTotal" disabled required>
+                                </div>  
+
+                                <div class="form-group col">
+                                    <button class="btn btn-primary" type="submit">Agregar</button>
+                                </div>
+
                             </form>
+                            
                         </div>
                     </div>
-                </div>
-            </section>
-
-
-            <section>
-                <div class="row mt-4">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <form class="row" id="formDetalle">
-                                    <div class="form-group col-md-2">
-                                        <label for="">Cantidad</label>
-                                        <input type="number" class="form-control" id="inputCantidad">
-                                    </div>
-                                    <div class="form-group col-md-5">
-                                        <label for="">Descripcion</label>
-                                        <select id="selectDescripcion" class="form-control">
-                                            <option value="0">--seleccione--</option>
-
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-2">
-                                        <label for="">P.Unit</label>
-                                        <input type="number" class="form-control" id="inputPUnitario" disabled>
-                                    </div>
-                                    <div class="form-group col-md-2">
-                                        <label for="">P.Total</label>
-                                        <input type="number" class="form-control" id="inputPTotal" disabled>
-                                    </div>
-                                    <div class="form-group col-md-1 contenedor-boton">
-                                        <button class="btn btn-primary" type="submit">Agregar</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                    <div class="col mt-4">
+                        <button class="btn btn-dark btn-large" id="btnGuardar">
+                            Guardar Factura
+                        </button>
                     </div>
-                </div>
-
-                <div class="col mt-4">
-                    <button class="btn btn-dark btn-large" id="btnGuardar">
-                        Guardar Factura
-                    </button>
-
                 </div>
             </section>
 
@@ -135,10 +122,10 @@
                         <thead>
                             <tr>
                                 <th>Cantidad</th>
-                                <th>Dscripcion</th>
-                                <th>P. Untario</th>
-                                <th>P. Total</th>
-                                <th>Acciones</th>
+                                <th>Descripcion Examen</th>
+                                <th>Prec. Unitario</th>
+                                <th>Prec. Total</th>
+                                <th>Accion</th>
                             </tr>
                         </thead>
                         <tbody id="cuerpoTabla">

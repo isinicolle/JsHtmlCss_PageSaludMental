@@ -1,4 +1,4 @@
-const formDetalle = document.getElementById("formDetalle");
+
 const inputCantidad = document.getElementById("inputCantidad");
 const selectDescripcion = document.getElementById("selectDescripcion");
 const inputPUnitario = document.getElementById("inputPUnitario");
@@ -11,7 +11,7 @@ const inputRuc = document.getElementById("inputRuc");
 const inputNro = document.getElementById("inputNro");
 const inputDireccion = document.getElementById("inputDireccion");
 const inputFecha = document.getElementById("inputFecha");
-const formCabecera = document.getElementById("formCabecera");
+const formulario = document.getElementById("formulario");
 
 let facturas = [];
 let arregloDetalle = [];
@@ -129,7 +129,7 @@ const agregarDetalle = (objDetalle) => {
     }
 };
 
-formDetalle.onsubmit = (e) => {
+formulario.onsubmit = (e) => {
     e.preventDefault();
     //creando el objeto detalle
     const objDetalle = {
@@ -146,7 +146,7 @@ formDetalle.onsubmit = (e) => {
 };
 
 btnGuardar.onclick = () => {
-    //creando el objeto de la cabecera de la factura
+    //creando el objeto de la factura
     let objFactura = {
         nombre: inputNombre.value,
         direccion: inputDireccion.value,
@@ -158,8 +158,7 @@ btnGuardar.onclick = () => {
     facturas.push(objFactura);
 
     //limpiar los campos
-    formCabecera.reset();
-    formDetalle.reset();
+    formulario.reset();
 
     //Guardar en el LocalStorage
     localStorage.setItem("facturas", JSON.stringify(facturas));
