@@ -12,7 +12,8 @@
     <link rel="icon" type="imagenes/x-icon" href="../imagenes/icono.png">
     <link rel="stylesheet" href="../estilos/estiloTratamientos.css">
     <link rel="stylesheet" href="../estilos/estiloBlog.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../estilos/empleadosEliminar.css">
+    <script defer src="../JS/empleadoEliminar.js"></script>
     
     <title>Modulo de Empleados</title>
 </head>
@@ -73,61 +74,159 @@
 
         <div class="container empleados">
          
-            <form>
-                <fieldset disabled>
-                  <legend>Ingrese Datos del Empleado:</legend>
-                  <div class="emp-3">
-                    <label for="name" class="form-label">Datos Personales </label><br>
-                    <label for="disabledTextInput" class="form-label">Codigo de Empleado: </label>
-                    <input type="number" placeholder="codigo" value="5">
+              <form class="formulario" id="formulario">
                     
-                </fieldset>
-                <label for="name" class="form-label">Nombre Empleado: </label>
-                <input type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese el Nombre del Empleado" value="Juan" readonly=readonly>
                 <br>
-                <label for="name" class="form-label">Apellido Empleado: </label>
-                 <input type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese el Apellido del Empleado" value="Martinez" readonly=readonly>
-                 <br>
-                 <label for="tel" class="form-label">Telefono: </label>
-                 <input type="text" class="form-control" id="validationCustom01" required placeholder="####-####" style="width: 200px;" value="9556-3040" readonly=readonly>
-                 <br>
-                 <label for="validationDefault03" class="form-label">Identidad: </label>
-                 <input type="text" class="form-control" id="validationCustom01" required placeholder="####-####-#####" value="1001-1999-00289" readonly=readonly>
-                <br>
-                 <label for="exampleFormControlInput1" class="form-label">Fecha de nacimiento: </label>
-                 <input type="datetime" class="form-control" id="validationCustom01" required placeholder="dd/mm/aaaa --:--" value="01/05/1990 10:47" readonly=readonly>
-                 <br>
-                
-                <label for="name" class="form-label">Datos Empresariales </label><br>
-                <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Puesto: </label>
-                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" disabled=disabled>
-                   <option selected> Psiquiatra</option>
-                   <option value="1">Psiquiatra</option>
-                   <option value="2">Terapeuta</option>
-                   <option value="3">Secretario</option>
-                 </select>
-                <br>
-                <label for="exampleFormControlInput1" class="form-label">Correo Electronico: </label>
-                <input type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese Correo Electronico" value="juanmartinez@gmail.com" readonly=readonly>
-                <br>
-                <label for="exampleFormControlInput1" class="form-label">Usuario: </label>
-                <input type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese su Usuario" value="jmartinez" readonly=readonly>
-                <br>
-                <label for="exampleFormControlInput1" class="form-label">Contraseña: </label>
-                <input type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese su Contraseña" value="*****" readonly=readonly>
-                <br>
-                <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Estado del Empleado: </label>
-                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" disabled=disabled>
-                   <option selected> Activo </option>
-                   <option value="1">Activo</option>
-                   <option value="2">Inactivo</option>
-                 </select><br>
+                    <legend><p><h1><u>DATOS DEL EMPLEADO</u></h1></p></legend><br><br>
+                    <label for="name" class="form-label"><strong><h3>Datos Personales:</h3></strong> </label><br>
 
+                   <div>
+                        
+                        <label for="name" class="form-label">Codigo de Empleado: </label>
+                        <input type="number" placeholder="codigo" value="3" disabled="disabled">
+                        <img src="../imagenes/perfil.png" class="rounded float-end" alt="305" height="190" width="190">
+                    </div>
+                   
+                    <div class="row">
+                        <div class="col">
+                            <!-- Grupo: Nombre -->
+                            <div class="formulario__grupo" id="grupo__nombre">
+                                <label for="nombre" class="formulario__label">Nombre:</label>
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" name="nombre" id="nombre" required placeholder="Nombre Empleado" value="Juan" readonly=readonly>
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">El nombre solo puede contener letras, no puede contener numeros y guion bajo.</p>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <!-- Grupo: Apellido-->
+                            <div class="formulario__grupo" id="grupo__apellido">
+                                <label for="apellido" class="formulario__label">Apellido:</label>
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" name="apellido" id="apellido" required placeholder="Apellido Empleado" value="Martinez" readonly=readonly>
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">El apellido solo puede contener letras, no puede contener numeros y guion bajo.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <!-- Grupo: Identidad -->
+                            <div class="formulario__grupo" id="grupo__identidad">
+                                <label for="identidad" class="formulario__label">Identidad:</label>
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" name="identidad" id="identidad" required placeholder="Numero Identidad" value="1001-1999-00289" readonly=readonly>
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">La identidad solo puede contener numeros y el maximo son 13 dígitos.</p>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <!-- Grupo: Teléfono -->
+                            <div class="formulario__grupo" id="grupo__telefono">
+                                <label for="telefono" class="formulario__label">Teléfono</label>
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Numero Celular" value="95563040" readonly=readonly>
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 8 dígitos.</p>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <!-- Grupo: fecha-->
+                            <div class="formulario__grupo" id="grupo__fecha">
+                                <label for="fecha" class="formulario__label">Fecha:</label>
+                                <div class="formulario__grupo-input">
+                                    <input type="date" class="formulario__input" name="fecha" id="fecha" required placeholder="" value="1990-05-01" disabled=disabled>
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">Ingrese una fecha correcta.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <br>
+                  <br><br>
+                
+                  <label for="name" class="form-label"><strong><h3>Datos Empresariales:</h3></strong> </label><br>
+                  <div class="row">
+                    <div class="col">
+                        <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Puesto: </label>
+                        <!-- Grupo: selector-->
+                        <select class="form-select" aria-label="Default select example" disabled=disabled>
+                            <option selected>Psiquiatra</option>
+                            <option value="1">Psicologo</option>
+                            <option value="2">Terapeuta</option>
+                            <option value="3">Psiquiatra</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Grupo: Correo Electronico -->
+                        <div class="formulario__grupo" id="grupo__correo">
+                            <label for="correo" class="formulario__label">Correo Electrónico</label>
+                            <div class="formulario__grupo-input">
+                                <input type="email" class="formulario__input" name="correo" id="correo" required placeholder="Correo Electronico" value="juanmartinez@gmail.com" readonly=readonly>
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col">
+                        <!-- Grupo: Usuario -->
+                        <div class="formulario__grupo" id="grupo__usuario">
+                            <label for="usuario" class="formulario__label">Usuario</label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" name="usuario" id="usuario" required placeholder="Nombre Usuario" value="jmartinez" readonly=readonly>
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                        </div>  
+                      </div>
+                      <div class="col">
+                        <!-- Grupo: Contraseña -->
+                        <div class="formulario__grupo" id="grupo__password">
+                            <label for="password" class="formulario__label">Contraseña</label>
+                            <div class="formulario__grupo-input">
+                                <input type="password" class="formulario__input" name="password" id="password" required placeholder="Contraseña" value="*****" readonly=readonly>
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                        </div>
+
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Estado: </label>
+                        <!-- Grupo: selector-->
+                        <select class="form-select" aria-label="Default select example" disabled=disabled>
+                            <option selected> Activo: </option>
+                            <option value="1">Activo</option>
+                            <option value="2">Inactivo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="formulario__grupo" id="grupo__correo">
+                            <label for="correo" class="formulario__label"></label>
+                        </div>
+                    </div>
+                  </div>
+                  <br>
+                <br>
                 <div style="text-align: center;">
-                    <button type="button" class="btn btn-success">Agregar</button>
+                    <button type="submit" id="submit-btn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Eliminar</button>
                     <a  href="../modulos/moduloempleados.html"><button type="button" class="btn btn-danger">Cancelar</button></a>
                 </div><br>
-              </form>
+          </form>
+
               <!-- The Modal -->
             <div class="modal fade" id="myModal">
                 <div class="modal-dialog">
@@ -139,12 +238,13 @@
                     </div>
                     <!-- Modal body -->
                     <div class="modal-body">
-                    Se ha modificado informacion del Empleado!
+                    El Empleado seleccionado será eliminado. <br>
+                    Esta seguro de Eliminarlo? <br>
                     </div>
                     <!-- Modal footer -->
                     <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar Cambios</button>
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
                     </div>
             
                 </div>

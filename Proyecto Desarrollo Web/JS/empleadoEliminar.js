@@ -4,12 +4,12 @@ const inputs = document.querySelectorAll('#formulario input');
 const expresiones = {
     nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
     apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	fecha: /^[0-9]{1,4}\-[0-9]{1,2}\-[0-9]{1,2}$/,
+	fecha: /^[0-9]{1,2}\-[0-9]{1,2}\-[0-9]{1,4}$/,
 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
 	password: /^.{4,12}$/, // 4 a 12 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	identidad: /^\d{4}-\d{4}-\d{5}$/,
-	telefono: /^\d{8}$/ // 7 a 14 numeros.
+	telefono: /^\d{8}$/ // 8 numeros.
 }
 
 const campos = {
