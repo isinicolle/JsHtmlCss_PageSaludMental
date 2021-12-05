@@ -69,40 +69,46 @@
         </div>
         <div class="container p-2" style="background-color:darksalmon">
          
-            <form>
+            <form id="formulario">
                 <fieldset >
                   <legend>Ingreso de datos del Paciente</legend>
                   <div class="mb-3">
                     <label for="disabledTextInput" class="form-label">Codigo de Paciente: </label>
-                    <input type="number" placeholder="codigo" value="7">
+                    <input id="codigo-paciente" type="number" placeholder="codigo" value="7">
 
                     
                 </fieldset>
                 <fieldset available class="border">
+                <label for="exampleFormControlInput1" class="form-label">Nombre del paciente: </label>
+                <input id="nombre-paciente" type="text" class="form-control" placeholder="Ingrese su nombre">
+                <br>
+                <label for="exampleFormControlInput1" class="form-label">Apellido del paciente: </label>
+                <input id="apellido-paciente" type="text" class="form-control" placeholder="Ingrese su apellido">
+                <br>
                 <label for="exampleFormControlInput1" class="form-label">Correo Electronico: </label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo">
+                <input id="correo-electronico" type="email" class="form-control" placeholder="Ingrese su correo">
                 <br>
                 <label for="tel" class="form-label">Telefono Fijo: </label>
-                 <input type="tel" name="telf"  class="form-control" id="exampleFormControlInput1"  pattern="(+[0-9]{3}) [0-9]{9}" placeholder="Ingrese el telefono fijo"> 
+                 <input id="telefono-fijo" type="tel" name="telf"  class="form-control" pattern="(+[0-9]{3}) [0-9]{9}" placeholder="Ingrese el telefono fijo"> 
                  <br>
                  <label for="tel" class="form-label">Telefono Particular: </label>
-                 <input type="tel" name="telf"  class="form-control" id="exampleFormControlInput1"  pattern="(+[0-9]{3}) [0-9]{9}" placeholder="Ingrese el telefono particular"> 
+                 <input id="telefono-particular" type="tel" name="telf"  class="form-control" pattern="(+[0-9]{3}) [0-9]{9}" placeholder="Ingrese el telefono particular"> 
                  <br>
                  <label for="exampleFormControlInput1" class="form-label">Fecha de nacimiento: </label>
-                 <input type="datetime-local" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo">
+                 <input id="fecha-nacimiento" type="datetime-local" class="form-control" placeholder="Ingrese su correo">
                  <br>
                 <label for="validationDefault03" class="form-label">Identidad: </label>
-                <input type="text" class="form-control" id="validationDefault03" required placeholder="Ingrese el RTN">
+                <input id="identidad" type="text" class="form-control" required placeholder="Ingrese el RTN">
                  
                 <br>
                 <label for="validationCustom03" class="form-label">Ocupacion: </label>
-                <input type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese la ocupacion">
+                <input id="ocupacion" type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese la ocupacion">
                 <div class="invalid-feedback">
                       Porfavor ingrese la ocupacion del paciente.
                 </div>
                 <br>
                 <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Genero: </label>
-                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <select id="genero" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                    <option selected>Seleccione</option>
                    <option value="1">Masculino</option>
                    <option value="2">Femenino</option>
@@ -114,7 +120,7 @@
                  <a href="#post-view">
                  <br>
                  <div style="text-align: center;">
-                    <button type="button" class="btn btn-success" onclick="msj2()">Insertar</button>
+                    <button type="submit" class="btn btn-success" onclick="msj2()">Insertar</button>
                     
                     <a href="./modulopacientes.html">     <button type="button" class="btn btn-danger" onclick="msj()">Cancelar</button></a>
                     <script  type="text/javascript">
@@ -188,7 +194,7 @@
                 </center>
             </div>
         </footer>
-
+        <script src="../JS/modulopacienteinsertar.js"></script>
     </main>
 </body>
 
