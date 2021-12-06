@@ -70,7 +70,7 @@
         <div class="container p-2" style="background-color: greenyellow;">
          
             <form id="formulario">
-                <fieldset >
+                <fieldset disabled>
                   <legend>Ingreso de datos de las citas</legend>
                   <div class="mb-3">
                     <label for="disabledTextInput" class="form-label">Codigo de cita: </label>
@@ -78,44 +78,44 @@
 
                     
                 </fieldset>
-                <fieldset available class="border">
+                <fieldset disabled class="border">
                 <label for="exampleFormControlInput1" class="form-label">Hora de inicio de la cita: </label>
-                <input id="nombre-paciente" type="text" class="form-control" placeholder="Ingrese hora de inicio de la cita">
+                <input id="nombre-paciente" type="text" class="form-control"  value="12:00 PM">
                 <br>
                 <label for="exampleFormControlInput1" class="form-label">Hora que finaliza la cita: </label>
-                <input id="apellido-paciente" type="text" class="form-control" placeholder="Ingrese hora de finalizacion de cita">
+                <input id="apellido-paciente" type="text" class="form-control" value="03:00 PM">
                 <br>
                 
                  <label for="exampleFormControlInput1" class="form-label">Fecha de cita: </label>
-                 <input id="fecha-nacimiento" type="datetime-local" class="form-control" placeholder="Ingrese su correo">
+                 <input id="fecha-nacimiento" type="text" class="form-control" value="22/11/2021">
                  <br>
     
                 
                 <br>
                 <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Paciente: </label>
                 <select id="genero" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                   <option selected>Seleccione</option>
-                   <option value="1">Lorena Zambrano</option>
+                   <option selected>Lorena Zambrano</option>
+                  
                    <option value="2">Arnaldo Padilla</option>
                    <option value="3">Ana Florentino</option>
                  </select>
                  <br>
                  <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Medico: </label>
                 <select id="genero" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                   <option selected>Seleccione</option>
-                   <option value="1">Bryan Hernandez</option>
+                   <option selected>Bryan Hernandez</option>
+              
                    <option value="2">Alex Espino</option>
                  
                  </select>
                  <p>Estado de la cita:</p>
                 <div>
                   <input type="radio" id="contactChoice1"
-                   name="contact" value="email" checked>
+                   name="contact" value="email" >
                   <label for="contactChoice1">Pospuesta</label>
               
                   <input type="radio" id="contactChoice2"
-                   name="contact" value="phone">
-                  <label for="contactChoice2">Finalizada</label>
+                   name="contact" value="phone" checked>
+                  <label for="contactChoice2" >Finalizada </label>
               
                   <input type="radio" id="contactChoice3"
                    name="contact" value="mail">
@@ -126,13 +126,13 @@
                   <label for="contactChoice3">Cancelada</label>
                 </div>
               
-                 
+            </fieldset>
                  <!--
 
                  -->
                  <div style="text-align: center;">
                  <div>
-                    <button type="submit" id="submit-btn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Insertar</button>
+                    <button type="submit" id="submit-btn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Eliminar</button>
    
 
                     <!-- The Modal -->
@@ -141,12 +141,12 @@
                        <div class="modal-content">
                            <!-- Modal Header -->
                            <div class="modal-header">
-                           <h4 class="modal-title">Añadir cita</h4>
+                           <h4 class="modal-title">Eliminar cita</h4>
                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                            </div>
                            <!-- Modal body -->
                            <div class="modal-body">
-                           Seguro que desea agregar una nueva cita?
+                           Seguro que desea Eliminar esta cita?
                            </div>
                            <!-- Modal footer -->
                            <div class="modal-footer">
@@ -177,7 +177,7 @@
                </div>
                <!-- Modal body -->
                <div class="modal-body">
-               Seguro que desea cancelar cambios
+               Seguro que desea eliminar los cambios
                </div>
                <!-- Modal footer -->
                <div class="modal-footer">
@@ -195,13 +195,13 @@
 
                    </div>
                   
-                </fieldset>
+           
                 
                 <script  type="text/javascript">
 
                     function msj(){
 
-                        alert("Cita agregado con exito")
+                        alert("Cita eliminada con exito")
                         return
                     }
             
