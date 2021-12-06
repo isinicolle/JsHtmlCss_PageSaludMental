@@ -120,24 +120,69 @@
                  <a href="#post-view">
                  <br>
                  <div style="text-align: center;">
-                    <button type="submit" class="btn btn-success" onclick="msj2()">Insertar</button>
-                    
-                    <a href="./modulopacientes.html">     <button type="button" class="btn btn-danger" onclick="msj()">Cancelar</button></a>
-                    <script  type="text/javascript">
+                 <div>
+                    <button type="submit" id="submit-btn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Agregar</button>
+   
 
-                        function msj(){
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                       <div class="modal-dialog">
+                       <div class="modal-content">
+                           <!-- Modal Header -->
+                           <div class="modal-header">
+                           <h4 class="modal-title">Guardar Empleado</h4>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                           </div>
+                           <!-- Modal body -->
+                           <div class="modal-body">
+                           Se ha agregado informacion del Empleado!
+                           </div>
+                           <!-- Modal footer -->
+                           <div class="modal-footer">
+                           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar Cambios</button>
+                           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                           </div>
+                   
+                       </div>
+                       </div>
+                   </div>
+       
+               </div>
+   
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+       <div>
+        <button type="submit" id="submit-btn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModall">Cancelar</button>
 
-                            alert("la informacion que no se a insertado se perdera")
-                            return
-                        }
-                         function msj2(){
 
-                            alert("Paciente nuevo agregado!")
-                            return
-                        }
-                
-                
-                    </script>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModall">
+           <div class="modal-dialog">
+           <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+               <h4 class="modal-title">Cancelar</h4>
+               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+               Seguro que desea cancelar cambios
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                   <a href="./modulopacientes.html">   <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button></a>
+            
+               <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+               </div>
+       
+           </div>
+           </div>
+       </div>
+
+   </div>
+                       
+
+                   </div>
                   
                 </fieldset>
                   
