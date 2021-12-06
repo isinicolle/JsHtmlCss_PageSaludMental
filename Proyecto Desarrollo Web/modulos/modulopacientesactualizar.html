@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../estilos/estiloBlog.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     
-    <title>Modulo de Pacientes Actualizar</title>
+    <title>Modulo de Pacientes Insertar</title>
 </head>
 
 <body>
@@ -59,7 +59,7 @@
         </nav>
         <div class="navpaginaactual">
             <pre>
-             <strong>Actualmente se encuentra en: </strong> <em>Modulo de pacientes Actualizar</em>
+             <strong>Actualmente se encuentra en: </strong> <em>Modulo de pacientes Insertar</em>
             </pre>
         </div>
         <div class="regresar" style="align-content: center">
@@ -67,75 +67,138 @@
                 <a href="../modulos/modulopacientes.html" style="color: darkslateblue;"> << Regresar al listado de pacientes</a>
             </strong>
         </div>
-        <div class="container p-2" style="background-color:lightblue">
+        <div class="container p-2" style="background-color:cornflowerblue">
          
-            <form>
+            <form disabled id="formulario">
                 <fieldset disabled>
                   <legend>Ingreso de datos del Paciente</legend>
                   <div class="mb-3">
-                    <label for="disabledTextInput" class="form-label">Codigo de Paciente: </label> <br>
-                    <input type="number" placeholder="codigo" value="6"> <br>
+                    <label for="disabledTextInput" class="form-label">Codigo de Paciente: </label>
+                    <input id="codigo-paciente" type="number" placeholder="codigo" value="6">
 
+                    
                 </fieldset>
-                <fieldset available class="border">
+                <fieldset disabled available class="border">
+                <label for="exampleFormControlInput1" class="form-label">Nombre del paciente: </label>
+                <input id="nombre-paciente" type="text" class="form-control" placeholder="Arnaldo">
+                <br>
+                <label for="exampleFormControlInput1" class="form-label">Apellido del paciente: </label>
+                <input id="apellido-paciente" type="text" class="form-control" placeholder="Padilla">
+                <br>
                 <label for="exampleFormControlInput1" class="form-label">Correo Electronico: </label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="carlosflores@gmail.com">
+                <input id="correo-electronico" type="email" class="form-control" placeholder="arnaldopadillas@gmail.com">
                 <br>
                 <label for="tel" class="form-label">Telefono Fijo: </label>
-                 <input type="tel" name="telf"  class="form-control" id="exampleFormControlInput1"  pattern="(+[0-9]{3}) [0-9]{9}" placeholder="12-34-56-78"> 
+                 <input id="telefono-fijo" type="tel" name="telf"  class="form-control" pattern="(+[0-9]{3}) [0-9]{9}" placeholder="12-34-56-78"> 
                  <br>
                  <label for="tel" class="form-label">Telefono Particular: </label>
-                 <input type="tel" name="telf"  class="form-control" id="exampleFormControlInput1"  pattern="(+[0-9]{3}) [0-9]{9}" placeholder="99-99-99-99"> 
+                 <input id="telefono-particular" type="tel" name="telf"  class="form-control" pattern="(+[0-9]{3}) [0-9]{9}" placeholder="Ingrese el telefono particular"> 
                  <br>
                  <label for="exampleFormControlInput1" class="form-label">Fecha de nacimiento: </label>
-                 <input type="datetime-local" class="form-control" id="exampleFormControlInput1">
+                 <input id="fecha-nacimiento" type="datetime-local" class="form-control" placeholder="Ingrese su correo">
                  <br>
                 <label for="validationDefault03" class="form-label">Identidad: </label>
-                <input type="text" class="form-control" id="validationDefault03" required placeholder="080120011111">
+                <input id="identidad" type="text" class="form-control" required placeholder="080119851111">
                  
                 <br>
                 <label for="validationCustom03" class="form-label">Ocupacion: </label>
-                <input type="text" class="form-control" id="validationCustom03" required placeholder="Estudiante">
-                <div class="invalid-feedback">
-                      Porfavor ingrese la ocupacion del paciente.
-                </div>
+                <input id="ocupacion" type="text" class="form-control" id="validationCustom03" required placeholder="Ama de casa">
+               
                 <br>
                 <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Genero: </label>
-                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <select id="genero" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                    <option selected>Masculino</option>
-            
+                   <option value="1">Masculino</option>
                    <option value="2">Femenino</option>
                    <option value="3">No binario</option>
                  </select>
                  <br>
                  <label for="validationCustom03" class="form-label">Foto del paciente: </label>
-                 <br>
-                <img src="../imagenes/universitario.png" alt="Imagen estudiante" width="100px" height="auto" style="border: goldenrod;">
-                <input type="file" name="imagen" id="imagen"><br><br>
+                 <img src="../imagenes/universitario.png" alt="Imagen estudiante" width="100px" height="auto" style="border: goldenrod;">
+                 <input type="file" name="imagen" id="imagen"><br><br>
                  <a href="#post-view">
                  <br>
                 </fieldset>
-                 <br>
                  <div style="text-align: center;">
-                    <button type="button" class="btn btn-success" onclick="msj2()">Actualizar informacion del Paciente</button>
-                    
-                    <a href="./modulopacientes.html">     <button type="button" class="btn btn-danger" onclick="msj()">Cancelar</button></a>
-                    <script  type="text/javascript">
+                 <div>
+                     <br>
+                    <button type="submit" id="submit-btn" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal">Eliminar</button>
+   
 
-                        function msj(){
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                       <div class="modal-dialog">
+                       <div class="modal-content">
+                           <!-- Modal Header -->
+                           <div class="modal-header">
+                           <h4 class="modal-title">Eliminar paciente</h4>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                           </div>
+                           <!-- Modal body -->
+                           <div class="modal-body">
+                           Seguro que desea eliminar a este paciente?
+                           </div>
+                           <!-- Modal footer -->
+                           <div class="modal-footer">
+                            <a href="./modulopacientes.html"> <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="msj()">Guardar Cambios</button></a>
+                           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                           </div>
+                   
+                       </div>
+                       </div>
+                   </div>
+       
+               </div>
+   
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+       <div>
+           <br>
+        <button type="submit" id="submit-btn" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModall">Cancelar</button>
 
-                            alert("Esta seguro de esta accion?")
-                            return
-                        }
-                
-                         function msj2(){
+<br>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModall">
+           <div class="modal-dialog">
+           <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+               <h4 class="modal-title">Cancelar</h4>
+               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+               Seguro que desea cancelar cambios
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                   <a href="./modulopacientes.html">   <button type="button" class="btn btn-primary" data-bs-dismiss="modal" >Aceptar</button></a>
+            
+               <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+               </div>
+       
+           </div>
+           </div>
+       </div>
 
-                            alert("Informacion del paciente actualizada con exito")
-                            return
-                        }
-                    </script>
-         
+   </div>
+                       
+
+                   </div>
                   
+              
+                
+                <script  type="text/javascript">
+
+                    function msj(){
+
+                        alert("Paciente eliminado con exito")
+                        return
+                    }
+            
+                   
+                </script>
+  
               </form>
         </div>
 
@@ -189,7 +252,10 @@
                 </center>
             </div>
         </footer>
-
+          <script type="text/javascript" src="../Js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="../Js/popper.min.js"></script>
+    <script type="text/javascript" src="../Js/bootstrap.min.js"></script>
+        <script src="../JS/modulopacienteinsertar.js"></script>
     </main>
 </body>
 

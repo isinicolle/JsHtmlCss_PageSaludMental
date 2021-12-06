@@ -67,29 +67,29 @@
                 <a href="../modulos/modulopacientes.html" style="color: darkslateblue;"> << Regresar al listado de pacientes</a>
             </strong>
         </div>
-        <div class="container p-2" style="background-color:darksalmon">
+        <div class="container p-2" style="background-color:cornflowerblue">
          
             <form disabled id="formulario">
                 <fieldset disabled>
                   <legend>Ingreso de datos del Paciente</legend>
                   <div class="mb-3">
                     <label for="disabledTextInput" class="form-label">Codigo de Paciente: </label>
-                    <input id="codigo-paciente" type="number" placeholder="codigo" value="7">
+                    <input id="codigo-paciente" type="number" placeholder="codigo" value="6">
 
                     
                 </fieldset>
                 <fieldset disabled available class="border">
                 <label for="exampleFormControlInput1" class="form-label">Nombre del paciente: </label>
-                <input id="nombre-paciente" type="text" class="form-control" placeholder="Ingrese su nombre">
+                <input id="nombre-paciente" type="text" class="form-control" placeholder="Arnaldo">
                 <br>
                 <label for="exampleFormControlInput1" class="form-label">Apellido del paciente: </label>
-                <input id="apellido-paciente" type="text" class="form-control" placeholder="Ingrese su apellido">
+                <input id="apellido-paciente" type="text" class="form-control" placeholder="Padilla">
                 <br>
                 <label for="exampleFormControlInput1" class="form-label">Correo Electronico: </label>
-                <input id="correo-electronico" type="email" class="form-control" placeholder="Ingrese su correo">
+                <input id="correo-electronico" type="email" class="form-control" placeholder="arnaldopadillas@gmail.com">
                 <br>
                 <label for="tel" class="form-label">Telefono Fijo: </label>
-                 <input id="telefono-fijo" type="tel" name="telf"  class="form-control" pattern="(+[0-9]{3}) [0-9]{9}" placeholder="Ingrese el telefono fijo"> 
+                 <input id="telefono-fijo" type="tel" name="telf"  class="form-control" pattern="(+[0-9]{3}) [0-9]{9}" placeholder="12-34-56-78"> 
                  <br>
                  <label for="tel" class="form-label">Telefono Particular: </label>
                  <input id="telefono-particular" type="tel" name="telf"  class="form-control" pattern="(+[0-9]{3}) [0-9]{9}" placeholder="Ingrese el telefono particular"> 
@@ -98,31 +98,29 @@
                  <input id="fecha-nacimiento" type="datetime-local" class="form-control" placeholder="Ingrese su correo">
                  <br>
                 <label for="validationDefault03" class="form-label">Identidad: </label>
-                <input id="identidad" type="text" class="form-control" required placeholder="Ingrese el RTN">
+                <input id="identidad" type="text" class="form-control" required placeholder="080119851111">
                  
                 <br>
                 <label for="validationCustom03" class="form-label">Ocupacion: </label>
-                <input id="ocupacion" type="text" class="form-control" id="validationCustom03" required placeholder="Ingrese la ocupacion">
-                <div class="invalid-feedback">
-                      Porfavor ingrese la ocupacion del paciente.
-                </div>
+                <input id="ocupacion" type="text" class="form-control" id="validationCustom03" required placeholder="Ama de casa">
+               
                 <br>
                 <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Genero: </label>
                 <select id="genero" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                   <option selected>Seleccione</option>
+                   <option selected>Masculino</option>
                    <option value="1">Masculino</option>
                    <option value="2">Femenino</option>
                    <option value="3">No binario</option>
                  </select>
                  <br>
                  <label for="validationCustom03" class="form-label">Foto del paciente: </label>
-                 <input type="file" name="imagen" id="imagen"><br><br>
-                 <a href="#post-view">
-                 <br>
+                 <img src="../imagenes/universitario.png" alt="Imagen estudiante" width="100px" height="auto" style="border: goldenrod;">
+                 
                 </fieldset>
                  <div style="text-align: center;">
                  <div>
-                    <button type="submit" id="submit-btn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Insertar</button>
+                     <br>
+                    <button type="submit" id="submit-btn" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal">Eliminar</button>
    
 
                     <!-- The Modal -->
@@ -153,9 +151,10 @@
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
    
        <div>
+           <br>
         <button type="submit" id="submit-btn" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModall">Cancelar</button>
 
-
+<br>
         <!-- The Modal -->
         <div class="modal fade" id="myModall">
            <div class="modal-dialog">
