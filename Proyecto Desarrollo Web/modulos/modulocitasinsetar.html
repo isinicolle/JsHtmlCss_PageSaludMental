@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" type="imagenes/x-icon" href="../imagenes/icono.png">
+    <link rel="stylesheet" href="../estilos/estiloTratamientos.css">
+    <link rel="stylesheet" href="../estilos/estiloBlog.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <title>Modulo de Pacientes Insertar</title>
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="logo-header">
+                <div>
+                    <img src="../imagenes/logo pagina proyecto_preview_rev_1.png" alt="">
+                </div>
+            </div>
+            <nav class="nav-menu">
+
+                <ul>
+                    <li style="display: inline;">
+                        <a href="../index.html">Pagina de Inicio</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="../paginas/quienessomos.html">Quienes somos</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="../paginas/blogdeinicio.html">Blog</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="../paginas/tratamientos.html">Tratamientos</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="../paginas/testimonios.html">Testimonios</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="../paginas/ubicacion.html">Ubicación</a>
+                    </li>
+                    <li style="display: inline;">
+                        <a href="../paginas/pidetucita.html">Pide tu Cita</a>
+                    </li>
+                    <li>
+                        <a href="../paginas/iniciarsesion.html">Iniciar Sesion</a>
+                    </li>
+                </ul>
+
+            </nav>
+            </div>
+            </div>
+        </header>
+        </nav>
+        <div class="navpaginaactual">
+            <pre>
+             <strong>Actualmente se encuentra en: </strong> <em>Modulo de pacientes Insertar</em>
+            </pre>
+        </div>
+        <div class="regresar" style="align-content: center">
+            <strong>
+                <a href="../modulos/modulopacientes.html" style="color: darkslateblue;"> << Regresar al listado de pacientes</a>
+            </strong>
+        </div>
+        <div class="container p-2" style="background-color:darksalmon">
+         
+            <form id="formulario">
+                <fieldset >
+                  <legend>Ingreso de datos de las citas</legend>
+                  <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label">Codigo de cita: </label>
+                    <input id="codigo-paciente" type="number" placeholder="codigo" value="7">
+
+                    
+                </fieldset>
+                <fieldset available class="border">
+                <label for="exampleFormControlInput1" class="form-label">Hora de inicio de la cita: </label>
+                <input id="nombre-paciente" type="text" class="form-control" placeholder="Ingrese su nombre">
+                <br>
+                <label for="exampleFormControlInput1" class="form-label">Hora que finaliza la cita: </label>
+                <input id="apellido-paciente" type="text" class="form-control" placeholder="Ingrese su apellido">
+                <br>
+                
+                 <label for="exampleFormControlInput1" class="form-label">Fecha de cita: </label>
+                 <input id="fecha-nacimiento" type="datetime-local" class="form-control" placeholder="Ingrese su correo">
+                 <br>
+    
+                
+                <br>
+                <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Paciente: </label>
+                <select id="genero" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                   <option selected>Seleccione</option>
+                   <option value="1">Lorena Zambrano</option>
+                   <option value="2">Arnaldo Padilla</option>
+                   <option value="3">Ana Florentino</option>
+                 </select>
+                 <br>
+                 <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Medico: </label>
+                <select id="genero" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                   <option selected>Seleccione</option>
+                   <option value="1">Bryan Hernandez</option>
+                   <option value="2">Alex Espino</option>
+                 
+                 </select>
+                 <p>Estado de la cita:</p>
+                <div>
+                  <input type="radio" id="contactChoice1"
+                   name="contact" value="email" checked>
+                  <label for="contactChoice1">Pospuesta</label>
+              
+                  <input type="radio" id="contactChoice2"
+                   name="contact" value="phone">
+                  <label for="contactChoice2">Finalizada</label>
+              
+                  <input type="radio" id="contactChoice3"
+                   name="contact" value="mail">
+                  <label for="contactChoice3">Pendiente</label>
+
+                  <input type="radio" id="contactChoice3"
+                   name="contact" value="mail">
+                  <label for="contactChoice3">Cancelada</label>
+                </div>
+              
+                 
+                 <!--
+
+                 -->
+                 <div style="text-align: center;">
+                 <div>
+                    <button type="submit" id="submit-btn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Insertar</button>
+   
+
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                       <div class="modal-dialog">
+                       <div class="modal-content">
+                           <!-- Modal Header -->
+                           <div class="modal-header">
+                           <h4 class="modal-title">Añadir paciente</h4>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                           </div>
+                           <!-- Modal body -->
+                           <div class="modal-body">
+                           Seguro que desea agregar a este paciente?
+                           </div>
+                           <!-- Modal footer -->
+                           <div class="modal-footer">
+                            <a href="./modulopacientes.html"> <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="msj()">Guardar Cambios</button></a>
+                           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                           </div>
+                   
+                       </div>
+                       </div>
+                   </div>
+       
+               </div>
+   
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+       <div>
+        <button type="submit" id="submit-btn" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModall">Cancelar</button>
+
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModall">
+           <div class="modal-dialog">
+           <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+               <h4 class="modal-title">Cancelar</h4>
+               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+               Seguro que desea cancelar cambios
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                   <a href="./modulopacientes.html">   <button type="button" class="btn btn-primary" data-bs-dismiss="modal" >Aceptar</button></a>
+            
+               <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+               </div>
+       
+           </div>
+           </div>
+       </div>
+
+   </div>
+                       
+
+                   </div>
+                  
+                </fieldset>
+                
+                <script  type="text/javascript">
+
+                    function msj(){
+
+                        alert("Paciente agregado con exito")
+                        return
+                    }
+            
+                   
+                </script>
+  
+              </form>
+        </div>
+
+        </div>
+        <br>
+        
+
+        <footer>
+            <div class="main-content">
+                <div class="left box">
+                    <h2>SaluMent</h2>
+                    <div class="content">
+                        <p>La salud mental incluye nuestro bienestar emocional, psicológico y social. Afecta la forma en que pensamos, sentimos y actuamos cuando enfrentamos la vida. También ayuda a determinar cómo manejamos el estrés, nos relacionamos con
+                            los demás y tomamos decisiones. La salud mental es importante en todas las etapas de la vida, desde la niñez y la adolescencia hasta la adultez y la vejez.</p>
+                        <div class="social">
+                            <a target="_blank" href="https://www.facebook.com/inssaludment"><span class="fab fa-facebook-f"></span></a>
+                            <a target="_blank" href="https://twitter.com/MentSalu"><span class="fab fa-twitter"></span></a>
+                            <a target="_blank" href="https://www.instagram.com/salu.ment/"><span class="fab fa-instagram"></span></a>
+                            <a target="_blank" href="#"><span class="fab fa-youtube"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center box">
+                    <h2>Ubicación</h2>
+                    <div class="content">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text">Tegucigalpa, Honduras</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text">1234-5678</span>
+                        </div>
+                        <div class="email">
+                            <span class="fas fa-envelope"></span>
+                            <span class="text">inssalument@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <img src="../imagenes/logo pagina proyecto_preview_rev_1.png" alt="">
+                </div>
+            </div>
+            <div class="bottom">
+                <center>
+                    <span class="credit">Desarrollado por Isis Zapata - Hacknel - Jose Figueroa - Olman Garcia |
+                    </span>
+                    <span class="far fa-copyright"></span><span> 2021.</span>
+                </center>
+            </div>
+        </footer>
+          <script type="text/javascript" src="../Js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="../Js/popper.min.js"></script>
+    <script type="text/javascript" src="../Js/bootstrap.min.js"></script>
+        <script src="../JS/modulopacienteinsertar.js"></script>
+    </main>
+</body>
+
+</html>
