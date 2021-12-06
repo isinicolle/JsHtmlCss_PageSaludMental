@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../estilos/estiloBlog.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     
-    <title>Modulo de Pacientes Insertar</title>
+    <title>Modulo de Pacientes Eliminar</title>
 </head>
 
 <body>
@@ -59,7 +59,7 @@
         </nav>
         <div class="navpaginaactual">
             <pre>
-             <strong>Actualmente se encuentra en: </strong> <em>Modulo de pacientes Insertar</em>
+             <strong>Actualmente se encuentra en: </strong> <em>Modulo de pacientes Eliminar</em>
             </pre>
         </div>
         <div class="regresar" style="align-content: center">
@@ -78,32 +78,31 @@
 
                     
                 </fieldset>
-                <fieldset available class="border">
-                <label for="exampleFormControlInput1" class="form-label">Nombre del paciente: </label>
-                <input id="nombre-paciente" type="text" class="form-control" placeholder="Arnaldo">
-                <br>
-                <label for="exampleFormControlInput1" class="form-label">Apellido del paciente: </label>
-                <input id="apellido-paciente" type="text" class="form-control" placeholder="Padilla">
-                <br>
-                <label for="exampleFormControlInput1" class="form-label">Correo Electronico: </label>
-                <input id="correo-electronico" type="email" class="form-control" placeholder="arnaldopadillas@gmail.com">
-                <br>
-                <label for="tel" class="form-label">Telefono Fijo: </label>
-                 <input id="telefono-fijo" type="tel" name="telf"  class="form-control" pattern="(+[0-9]{3}) [0-9]{9}" placeholder="12-34-56-78"> 
-                 <br>
-                 <label for="tel" class="form-label">Telefono Particular: </label>
-                 <input id="telefono-particular" type="tel" name="telf"  class="form-control" pattern="(+[0-9]{3}) [0-9]{9}" placeholder="Ingrese el telefono particular"> 
-                 <br>
-                 <label for="exampleFormControlInput1" class="form-label">Fecha de nacimiento: </label>
-                 <input id="fecha-nacimiento" type="datetime-local" class="form-control" placeholder="Ingrese su correo">
-                 <br>
-                <label for="validationDefault03" class="form-label">Identidad: </label>
-                <input id="identidad" type="text" class="form-control" required placeholder="080119851111">
-                 
-                <br>
-                <label for="validationCustom03" class="form-label">Ocupacion: </label>
-                <input id="ocupacion" type="text" class="form-control" id="validationCustom03" required placeholder="Ama de casa">
-               
+                <fieldset disabled class="border">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre del paciente: </label>
+                    <input id="nombre-paciente" type="text" class="form-control" value="Arnaldo">
+                    <br>
+                    <label for="exampleFormControlInput1" class="form-label">Apellido del paciente: </label>
+                    <input id="apellido-paciente" type="text" class="form-control" value="Padilla">
+                    <br>
+                    <label for="exampleFormControlInput1" class="form-label">Correo Electronico: </label>
+                    <input id="correo-electronico" type="email" class="form-control" value="arnaldopadillas@gmail.com">
+                    <br>
+                    <label for="tel" class="form-label">Telefono Fijo: </label>
+                     <input id="telefono-fijo" type="tel" name="telf"  class="form-control" pattern="(+[0-9]{3}) [0-9]{9}" value="12-34-56-78"> 
+                     <br>
+                     <label for="tel" class="form-label">Telefono Particular: </label>
+                     <input id="telefono-particular" type="tel" name="telf"  class="form-control" pattern="(+[0-9]{3}) [0-9]{9}" value="99-99-99-99"> 
+                     <br>
+                     <label for="exampleFormControlInput1" class="form-label">Fecha de nacimiento: </label>
+                     <input id="fecha-nacimiento" type="datetime-local" class="form-control" value="Ingrese su correo">
+                     <br>
+                    <label for="validationDefault03" class="form-label">Identidad: </label>
+                    <input id="identidad" type="text" class="form-control" required value="080119851111">
+                     
+                    <br>
+                    <label for="validationCustom03" class="form-label">Ocupacion: </label>
+                    <input id="ocupacion" type="text" class="form-control" id="validationCustom03" required value="Ama de casa">
                 <br>
                 <label for="exampleFormControlInput" class="form-select form-select-lg mb-3">Genero: </label>
                 <select id="genero" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
